@@ -9,16 +9,24 @@ export const Navbar: React.FC = () => {
           <img src={logo} className="translate-y-[30px] size-30" alt="" />
 
           {/* desktop menu */}
-          <ul className="md:flex gap-5 text-slate-950 hidden">
-            <li className="cursor-pointer">Home</li>
-            <li className="cursor-pointer">About</li>
-            <li className="cursor-pointer">Services</li>
-            <li className="cursor-pointer">Contact</li>
+          <ul className="relative md:flex gap-2 text-slate-950  hidden">
+            <li className="cursor-pointer hover:bg-gray-50 p-2 hover:shadow-md group">
+              Home
+            </li>
+            <li className="cursor-pointer hover:bg-gray-50 p-2 hover:shadow-md">
+              About
+            </li>
+            <li className="cursor-pointer hover:bg-gray-50 p-2 hover:shadow-md">
+              Services
+            </li>
+            <li className="cursor-pointer hover:bg-gray-50 p-2 hover:shadow-md">
+              Contact
+            </li>
           </ul>
 
           {/* mobile menu */}
           <div className="block md:hidden">
-            <IoMenu className="size-12" />
+            <IoMenu className="size-8" />
           </div>
         </nav>
       </div>

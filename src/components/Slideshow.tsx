@@ -33,8 +33,17 @@ export const Slideshow: React.FC = () => {
 
     fetchImages();
   }, []);
+  // Handle automatic navigation
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDirection("right");
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Auto slide every 5 seconds
 
-  // Handle manual navigation
+    return () => clearInterval(interval); // Cleanup on unmount or dependency change
+  }, [currentIndex, images.length]); // Reset the interval on manual navigation
+
+  // Modify navigation functions
   const prevSlide = () => {
     setDirection("left");
     setCurrentIndex((prevIndex) =>
@@ -50,7 +59,7 @@ export const Slideshow: React.FC = () => {
   return (
     <>
       <div className="relative w-full">
-        <div className="relative w-full mx-auto h-96 overflow-hidden bg-slate-800 rounded-lg">
+        <div className="relative w-full mx-auto h-96 overflow-hidden bg-gray-900 rounded-lg">
           <AnimatePresence
             initial={false}
             custom={direction}
@@ -85,13 +94,13 @@ export const Slideshow: React.FC = () => {
         <div className="absolute h-full  top-0 left-2 flex items-center ">
           <MdOutlineNavigateBefore
             onClick={prevSlide}
-            className="text-white size-10 hover:size-14 transition-all duration-300 bg-slate-700 rounded-mds"
+            className="text-white size-10 hover:size-14 transition-all duration-300 bg-gray-900 rounded-mds"
           />
         </div>
         <div className="absolute h-full top-0 right-2 flex items-center ">
           <MdOutlineNavigateNext
             onClick={nextSlide}
-            className="text-white size-10 hover:size-14 transition-all duration-300 bg-slate-700 rounded-md"
+            className="text-white size-10 hover:size-14 transition-all duration-300 bg-gray-900 rounded-md"
           />
         </div>
       </div>
