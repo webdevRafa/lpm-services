@@ -80,11 +80,7 @@ export const Slideshow: React.FC = () => {
                   x: direction === "right" ? "-100%" : "100%",
                   opacity: 0,
                 }}
-                transition={{
-                  type: "tween",
-                  duration: 0.35,
-                  ease: "easeInOut",
-                }}
+                transition={{ type: "tween", duration: 0.5, ease: "easeOut" }}
               />
             )}
           </AnimatePresence>

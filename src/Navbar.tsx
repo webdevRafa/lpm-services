@@ -1,12 +1,12 @@
-import logo from "./assets/modern-logo.svg";
+import logo from "./assets/logolarge.svg";
 import { IoMenu } from "react-icons/io5";
 
 export const Navbar: React.FC = () => {
   return (
     <>
       <div className="container mx-auto w-full sticky top-0 left-0 z-50 bg-white px-3 pb-2">
-        <nav className="flex justify-between items-end bg-white">
-          <img src={logo} className="translate-y-[30px] size-30" alt="" />
+        <nav className="flex justify-between items-end bg-white py-10">
+          <img src={logo} className="max-h-[75px]" alt="" />
 
           {/* desktop menu */}
           <ul className="relative md:flex gap-2 text-slate-950  hidden">
