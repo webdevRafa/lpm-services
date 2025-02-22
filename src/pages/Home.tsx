@@ -1,21 +1,18 @@
-import { Slideshow } from "../components/Slideshow";
-
 export const Home: React.FC = () => {
   return (
     <>
-      <div className="container mx-auto  top-0">
-        <Slideshow />
-        <div className="h-[3000px]">
-          <div className="px-3 bg-gray-900 shadow-md mx-auto w-[90%] max-w-[600px] translate-y-[-30%] py-10">
-            <h1 className="text-xl text-white text-center">
-              LEAKED PROOF MANAGEMENT SERVICES
+      <div>
+        <div className="bg-image flex items-center justify-center">
+          <div>
+            <h1 className="text-white text-5xl md:text-9xl text-center">
+              LEAKED PROOF
             </h1>
-            <p className="text-sm text-neutral-400 text-center">
-              Your trusted partner in real estate—connecting buyers, sellers,
-              and investors for seamless deals and real opportunities.
+            <p className="text-white text-center text-1xl md:text-4xl">
+              MANAGEMENT SERVICES
             </p>
           </div>
         </div>
+        <div className="h-[3000px]"></div>
       </div>
     </>
   );
