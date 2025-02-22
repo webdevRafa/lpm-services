@@ -37,6 +37,7 @@ ul {
 .bg-image {
   background-image: url('./assets/dark.jpg');
   background-position: center;
+  background-size: cover;
   background-attachment: fixed;
   width: 100%;
   height: 600px;
