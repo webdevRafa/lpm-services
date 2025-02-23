@@ -1,4 +1,4 @@
-import logo from "./assets/lpm-new.svg";
+import logo from "./assets/lpm-house.svg";
 import { IoMenu } from "react-icons/io5";
 
 export const Navbar: React.FC = () => {
