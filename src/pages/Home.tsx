@@ -3,6 +3,7 @@ import { Hero } from "../components/Hero";
 import { Mission } from "../components/Mission";
 import { Services } from "../components/Services";
 import { Slider } from "../components/Slider";
+import { Seller } from "../components/Seller";
 
 export const Home: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ export const Home: React.FC = () => {
         <Services />
         <Slider />
         <Footer />
+        <Seller />
       </div>
     </>
   );
