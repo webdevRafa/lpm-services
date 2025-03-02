@@ -12,16 +12,16 @@ export const Seller: React.FC = () => {
       </div>
 
       {/*  FORM CONTAINER */}
-      <div className="fixed top-32 py-10 px-4  w-full h-[100vh] bg-black">
-        <h1 className="text-white text-3xl md:text-6xl text-center">
-          Interested in selling?
-        </h1>
-        <p className="text-gray-400 text-center">
-          Please fill out this quick form and we will respond soon.
-        </p>
+      {selling && (
+        <div className="fixed top-32 py-10 px-4  w-full h-[100vh] bg-black">
+          <h1 className="text-white text-3xl md:text-6xl text-center">
+            Interested in selling?
+          </h1>
+          <p className="text-gray-400 text-center">
+            Please fill out this quick form and we will respond soon.
+          </p>
 
-        {/* FORM */}
-        {selling && (
+          {/* FORM */}
           <div className="mx-auto max-w-[600px] mt-10 flex justify-center">
             <form>
               <div className="flex justify-between gap-3 mb-2">
@@ -58,8 +58,8 @@ export const Seller: React.FC = () => {
               </div>
             </form>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </>
   );
 };
