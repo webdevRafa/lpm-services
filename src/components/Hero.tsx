@@ -4,7 +4,7 @@ export const Hero: React.FC = () => {
       <div className="bg-image flex items-center justify-center">
         <div>
           <h1 className="text-white text-5xl md:text-6xl text-center">
-            LEAKED PROOF MANAGEMENT
+            LEAKED PROOF MANAGEMENTS
           </h1>
 
           <p className="text-white text-center text-sm md:text-lg mt-3">
