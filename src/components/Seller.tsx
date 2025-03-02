@@ -21,42 +21,44 @@ export const Seller: React.FC = () => {
         </p>
 
         {/* FORM */}
-        <div className="mx-auto max-w-[600px] mt-10 flex justify-center">
-          <form>
-            <div className="flex justify-between gap-3 mb-2">
-              <label className="text-gray-400" htmlFor="bedrooms">
-                # of Bedrooms
-              </label>
-              <input
-                id="bedrooms"
-                className="text-gray-400 bg-gray-900 shadow-md rounded-lg"
-                type="text"
-              />
-            </div>
+        {selling && (
+          <div className="mx-auto max-w-[600px] mt-10 flex justify-center">
+            <form>
+              <div className="flex justify-between gap-3 mb-2">
+                <label className="text-gray-400" htmlFor="bedrooms">
+                  # of Bedrooms
+                </label>
+                <input
+                  id="bedrooms"
+                  className="text-gray-400 bg-gray-900 shadow-md rounded-lg"
+                  type="text"
+                />
+              </div>
 
-            <div className="flex justify-between gap-3 mb-2">
-              <label className="text-gray-400" htmlFor="baths">
-                # of Baths
-              </label>
-              <input
-                id="baths"
-                className="text-gray-400 bg-gray-900 shadow-md rounded-lg"
-                type="text"
-              />
-            </div>
+              <div className="flex justify-between gap-3 mb-2">
+                <label className="text-gray-400" htmlFor="baths">
+                  # of Baths
+                </label>
+                <input
+                  id="baths"
+                  className="text-gray-400 bg-gray-900 shadow-md rounded-lg"
+                  type="text"
+                />
+              </div>
 
-            <div className="flex justify-between gap-3 mb-2">
-              <label className="text-gray-400" htmlFor="squareFootage">
-                Sq Footage
-              </label>
-              <input
-                id="squareFootage"
-                className="text-gray-400 bg-gray-900 shadow-md rounded-lg"
-                type="text"
-              />
-            </div>
-          </form>
-        </div>
+              <div className="flex justify-between gap-3 mb-2">
+                <label className="text-gray-400" htmlFor="squareFootage">
+                  Sq Footage
+                </label>
+                <input
+                  id="squareFootage"
+                  className="text-gray-400 bg-gray-900 shadow-md rounded-lg"
+                  type="text"
+                />
+              </div>
+            </form>
+          </div>
+        )}
       </div>
     </>
   );
