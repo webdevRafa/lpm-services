@@ -8,7 +8,7 @@ export const Mission: React.FC = () => {
     <>
       <div
         id="mission"
-        className="bg-gradient-to-t bg-white py-[50px] md:py-[100px]"
+        className="bg-gradient-to-t bg-white py-[30px] md:py-[100px]"
       >
         <h1 className="text-center text-2xl md:text-4xl text-white mb-5">
           Your Trusted Partner in Real Estate – Buying, Selling & Investing Made
