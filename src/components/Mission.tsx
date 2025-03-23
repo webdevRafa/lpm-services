@@ -81,13 +81,12 @@ export const Mission: React.FC = () => {
 
           {/*  CARD 2 */}
           <div className="w-full rounded-lg shadow-md overflow-hidden h-[500px] relative group bg-slate-950">
-            <a href="https://www.google.com">
-              <img
-                className="hover:scale-130 object-cover group-hover:scale-130 group-hover:brightness-50 h-full w-full transition duration-1000 ease-in-out"
-                src={inside}
-                alt=""
-              />
-            </a>
+            <img
+              className="hover:scale-130 object-cover group-hover:scale-130 group-hover:brightness-50 h-full w-full transition duration-1000 ease-in-out"
+              src={inside}
+              alt=""
+            />
+
             {/* HEADLINE DIV */}
             <div className="absolute top-0 left-0 w-full  bg-gray-950 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
               <h1 className="text-white">Sell fast</h1>
