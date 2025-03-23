@@ -1,29 +1,156 @@
-import image from "../assets/riverwalk.jpg";
+import image from "../assets/pics/fancy.jpg";
+import inside from "../assets/pics/room.jpg";
+import kitchen from "../assets/pics/kitchen.jpg";
+import construction from "../assets/pics/construction.jpg";
 
 export const Mission: React.FC = () => {
   return (
     <>
-      <div className="bg-gray-900 pt-[50px] pb-[100px]">
+      <div
+        id="mission"
+        className="bg-gradient-to-t bg-white py-[50px] md:py-[100px]"
+      >
         <h1 className="text-center text-2xl md:text-4xl text-white mb-5">
           Your Trusted Partner in Real Estate – Buying, Selling & Investing Made
           Simple.
         </h1>
         <div className="flex flex-col md:flex-row gap-5  space-around mx-auto max-w-[1400px] ">
           <div className="w-full flex items-center justify-center">
-            <p className="text-gray-400 text-center text-sm md:text-lg">
-              At LPM, we’re redefining real estate by making buying, selling,
-              and investing faster, smarter, and stress-free. Whether you're
-              looking for your next home, need to sell quickly, or want
-              off-market investment opportunities, we bring data-driven
-              insights, seamless transactions, and real results. Our approach is
-              built on transparency, speed, and value, ensuring every deal is a
-              win-win. Real estate shouldn’t be complicated—we make it simple,
-              efficient, and built for today’s market. Let’s get you to your
-              next move.
-            </p>
+            <div className="px-3">
+              <h1 className="text-gray-900 text-center text-xl font-bold md:text-2xl lg:text-4xl mb-5">
+                At Leaked Proof Management Services, we are dedicated to guiding
+                you through every step of the real estate investing process with
+                clarity and confidence.
+              </h1>
+              <p className="text-left text-sm text-gray-800 mb-4">
+                Whether you're looking to buy or sell a property, we can help
+                you navigate the market, offering expert advice on properties in
+                any condition.
+              </p>
+              <p className="text-right md:text-left text-sm text-gray-800 mb-4">
+                We work closely with licensed professionals including real
+                estate agents, attorneys, and financial advisors to ensure you
+                receive{" "}
+                <span className="font-bold text-gray-700">
+                  top-quality service at every stage.
+                </span>
+              </p>
+              <p className="text-left text-sm text-gray-800 mb-4">
+                Our mission is to{" "}
+                <span className="font-bold text-gray-700">
+                  educate and empower you
+                </span>
+                , providing a thorough understanding of the process so you can
+                make informed decisions.
+              </p>
+              <p className="text-right md:text-left text-sm text-gray-800 mb-4">
+                Whether you're buying your first investment property or selling
+                one in any condition.{" "}
+                <span className="font-bold text-gray-700">
+                  We're here to support you every step of the way
+                </span>
+                , making your real estate journey a success.
+              </p>
+            </div>
           </div>
-          <div className="w-full">
-            <img className="" src={image} alt="" />
+        </div>
+        <div className="w-full mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 px-10">
+          {/* CARD 1 */}
+          <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[500px]">
+            <img
+              className="h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
+              src={image}
+              alt=""
+            />
+            {/* HEADLINE DIV */}
+            <div className="absolute top-0 left-0 w-full  bg-gray-950 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+              <h1 className="text-white">List Your Home</h1>
+            </div>
+            {/* SLIDER DIV */}
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-gray-950 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+              <div>
+                <h1 className="text-white mb-2 text-center">
+                  If you're ready to list your home..
+                </h1>
+                <button className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
+                  click here
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/*  CARD 2 */}
+          <div className="w-full rounded-lg shadow-md overflow-hidden h-[500px] relative group bg-slate-950">
+            <a href="https://www.google.com">
+              <img
+                className="hover:scale-130 object-cover group-hover:scale-130 group-hover:brightness-50 h-full w-full transition duration-1000 ease-in-out"
+                src={inside}
+                alt=""
+              />
+            </a>
+            {/* HEADLINE DIV */}
+            <div className="absolute top-0 left-0 w-full  bg-gray-950 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+              <h1 className="text-white">Sell fast</h1>
+            </div>
+
+            {/* SLIDER DIV */}
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-950 px-2 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+              <div>
+                <h1 className="text-white text-center mb-2">
+                  If you're needing to sell in any condition and fast..
+                </h1>
+                <button className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
+                  click here
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* CARD 3 */}
+          <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[500px]">
+            <img
+              className="h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
+              src={kitchen}
+              alt=""
+            />
+            {/* HEADLINE DIV */}
+            <div className="absolute top-0 left-0 w-full  bg-gray-950 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+              <h1 className="text-white">Under Construction</h1>
+            </div>
+            {/* SLIDER DIV */}
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-950 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+              <div>
+                <h1 className="text-white text-center mb-2">
+                  section under construction
+                </h1>
+                <button className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
+                  click here
+                </button>
+              </div>
+            </div>
+          </div>
+          {/* CARD 4 */}
+          <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[500px]">
+            <img
+              className="h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
+              src={construction}
+              alt=""
+            />
+            {/* HEADLINE DIV */}
+            <div className="absolute top-0 left-0 w-full  bg-gray-950 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+              <h1 className="text-white">Under Construction</h1>
+            </div>
+            {/* SLIDER DIV */}
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-950 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+              <div>
+                <h1 className="text-white text-center mb-2">
+                  section under construction
+                </h1>
+                <button className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
+                  click here
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

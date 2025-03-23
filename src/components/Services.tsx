@@ -6,7 +6,7 @@ export const Services: React.FC = () => {
   return (
     <>
       <div className="w-full py-20  bg-white">
-        <div className="flex flex-col md:flex-row gap-20 w-full  justify-center mx-auto">
+        <div className="flex flex-col md:flex-row gap-20 px-10 w-full  justify-center mx-auto">
           <div className="p-5 shadow-md">
             <MdRealEstateAgent className="size-40 mb-5 mx-auto text-white bg-slate-900 rounded-full p-2" />
 
