@@ -27,7 +27,7 @@ export const Mission: React.FC = () => {
                 you navigate the market, offering expert advice on properties in
                 any condition.
               </p>
-              <p className="text-right md:text-left text-sm text-gray-800 mb-4">
+              <p className="text-left text-sm text-gray-800 mb-4">
                 We work closely with licensed professionals including real
                 estate agents, attorneys, and financial advisors to ensure you
                 receive{" "}
@@ -43,7 +43,7 @@ export const Mission: React.FC = () => {
                 , providing a thorough understanding of the process so you can
                 make informed decisions.
               </p>
-              <p className="text-right md:text-left text-sm text-gray-800 mb-4">
+              <p className="text-left text-sm text-gray-800 mb-4">
                 Whether you're buying your first investment property or selling
                 one in any condition.{" "}
                 <span className="font-bold text-gray-700">
