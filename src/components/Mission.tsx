@@ -64,16 +64,16 @@ export const Mission: React.FC = () => {
             />
             {/* HEADLINE DIV */}
             <div className="absolute top-0 left-0 w-full  bg-cyan-700 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
-              <h1 className="text-white">List Your Home</h1>
+              <h1 className="text-white">List Your Home!</h1>
             </div>
             {/* SLIDER DIV */}
             <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-cyan-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white mb-2 text-center">
-                  If you're ready to list your home..
+                  interested in listing your home on the market?
                 </h1>
                 <button className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
-                  click here
+                  get started
                 </button>
               </div>
             </div>
@@ -99,7 +99,7 @@ export const Mission: React.FC = () => {
                   If you're needing to sell in any condition and fast..
                 </h1>
                 <button className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
-                  click here
+                  get an offer
                 </button>
               </div>
             </div>
@@ -120,10 +120,10 @@ export const Mission: React.FC = () => {
             <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-cyan-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white text-center mb-2">
-                  section under construction
+                  we can help you find the right one for you
                 </h1>
                 <button className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
-                  click here
+                  get started
                 </button>
               </div>
             </div>
