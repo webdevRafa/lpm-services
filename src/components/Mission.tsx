@@ -8,7 +8,7 @@ export const Mission: React.FC = () => {
     <>
       <div
         id="mission"
-        className="bg-gradient-to-t bg-white py-[30px] md:py-[100px]"
+        className=" bg-gradient-to-t bg-white py-[30px] md:py-[100px]"
       >
         <h1 className="text-center text-2xl md:text-4xl text-white mb-5">
           Your Trusted Partner in Real Estate – Buying, Selling & Investing Made
@@ -63,11 +63,11 @@ export const Mission: React.FC = () => {
               alt=""
             />
             {/* HEADLINE DIV */}
-            <div className="absolute top-0 left-0 w-full  bg-gray-950 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <div className="absolute top-0 left-0 w-full  bg-cyan-700 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
               <h1 className="text-white">List Your Home</h1>
             </div>
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-gray-950 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-cyan-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white mb-2 text-center">
                   If you're ready to list your home..
@@ -80,7 +80,7 @@ export const Mission: React.FC = () => {
           </div>
 
           {/*  CARD 2 */}
-          <div className="w-full rounded-lg shadow-md overflow-hidden h-[500px] relative group bg-slate-950">
+          <div className="w-full rounded-lg shadow-md overflow-hidden h-[500px] relative group bg-cyan">
             <img
               className="hover:scale-130 object-cover group-hover:scale-130 group-hover:brightness-50 h-full w-full transition duration-1000 ease-in-out"
               src={inside}
@@ -88,12 +88,12 @@ export const Mission: React.FC = () => {
             />
 
             {/* HEADLINE DIV */}
-            <div className="absolute top-0 left-0 w-full  bg-gray-950 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <div className="absolute top-0 left-0 w-full  bg-cyan-700 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
               <h1 className="text-white">Sell fast</h1>
             </div>
 
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-950 px-2 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-cyan-700 px-2 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white text-center mb-2">
                   If you're needing to sell in any condition and fast..
@@ -113,11 +113,11 @@ export const Mission: React.FC = () => {
               alt=""
             />
             {/* HEADLINE DIV */}
-            <div className="absolute top-0 left-0 w-full  bg-gray-950 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <div className="absolute top-0 left-0 w-full  bg-cyan-700 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
               <h1 className="text-white">Under Construction</h1>
             </div>
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-950 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-cyan-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white text-center mb-2">
                   section under construction
@@ -136,11 +136,11 @@ export const Mission: React.FC = () => {
               alt=""
             />
             {/* HEADLINE DIV */}
-            <div className="absolute top-0 left-0 w-full  bg-gray-950 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <div className="absolute top-0 left-0 w-full  bg-cyan-700 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
               <h1 className="text-white">Under Construction</h1>
             </div>
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-950 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-cyan-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white text-center mb-2">
                   section under construction

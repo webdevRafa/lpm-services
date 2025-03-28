@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'cyanss': '#1dfef6'
+        'cyans': '#1dfef6'
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

@@ -9,7 +9,7 @@ export const Navbar: React.FC = () => {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    setIsScrolled(offset > 520); // change 50 to however many pixels i want
+    setIsScrolled(offset > 500); // change 50 to however many pixels i want
   };
 
   useEffect(() => {
@@ -34,14 +34,38 @@ export const Navbar: React.FC = () => {
 
           {/* desktop menu */}
           <ul
-            className={`relative hidden md:flex gap-2 text-gray-950 ${
-              isScrolled ? "text-gray-950" : "text-white"
+            className={`relative hidden md:flex gap-2  ${
+              isScrolled ? "text-gray-950" : "text-gray-400"
             }`}
           >
-            <li className="cursor-pointer  p-2 hover:shadow-md ">Home</li>
-            <li className="cursor-pointer  p-2 hover:shadow-md">About</li>
-            <li className="cursor-pointer  p-2 hover:shadow-md">Services</li>
-            <li className="cursor-pointer  p-2 hover:shadow-md">Contact</li>
+            <li
+              className={`hover:scale-105 transition duration-300 cursor-pointer  p-2 hover:shadow-md ${
+                !isScrolled && "hover:text-white"
+              }`}
+            >
+              Home
+            </li>
+            <li
+              className={`hover:scale-105 transition duration-300 cursor-pointer  p-2 hover:shadow-md ${
+                !isScrolled && "hover:text-white"
+              }`}
+            >
+              About
+            </li>
+            <li
+              className={`hover:scale-105 transition duration-300 cursor-pointer  p-2 hover:shadow-md ${
+                !isScrolled && "hover:text-white"
+              }`}
+            >
+              Services
+            </li>
+            <li
+              className={`hover:scale-105 transition duration-300 cursor-pointer  p-2 hover:shadow-md ${
+                !isScrolled && "hover:text-white"
+              }`}
+            >
+              Contact
+            </li>
           </ul>
 
           {/* mobile menu */}
