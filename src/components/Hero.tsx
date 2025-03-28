@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
             Leaked Proof Management Services
           </h1>
 
-          <p className="text-gray-200 text-center text-sm md:text-lg mt-3">
+          <p className="text-gray-200 text-center text-sm md:text-lg mt-3 mx-4">
             Real Estate, Simplified – We Help You Buy, Sell & Invest With
             Confidence.
           </p>
