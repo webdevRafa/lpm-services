@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import whiteLogo from "./assets/white-logo.svg";
 import darkLogo from "./assets/dark-logo.svg";
 
 import { IoMenu } from "react-icons/io5";
@@ -26,42 +25,34 @@ export const Navbar: React.FC = () => {
             isScrolled ? "bg-white shadow-md" : "bg-transparent"
           }`}
         >
-          {isScrolled ? (
-            <img src={darkLogo} className="max-h-[60px]" alt="" />
-          ) : (
-            <img src={whiteLogo} className="max-h-[60px]" alt="" />
-          )}
+          <img src={darkLogo} className="max-h-[60px]" alt="" />
 
           {/* desktop menu */}
-          <ul
-            className={`relative hidden md:flex gap-2  ${
-              isScrolled ? "text-gray-950" : "text-gray-400"
-            }`}
-          >
+          <ul className={`relative hidden md:flex gap-2 text-gray-950 `}>
             <li
-              className={`hover:scale-105 transition duration-300 cursor-pointer  p-2 hover:shadow-md ${
-                !isScrolled && "hover:text-white"
+              className={`hover:scale-110 transition duration-300 cursor-pointer font-bold  p-2 hover:shadow-md  ${
+                !isScrolled && "hover:bg-cyan-700 shadow-xl"
               }`}
             >
               Home
             </li>
             <li
-              className={`hover:scale-105 transition duration-300 cursor-pointer  p-2 hover:shadow-md ${
-                !isScrolled && "hover:text-white"
+              className={`hover:scale-110 transition duration-300 cursor-pointer font-bold p-2 hover:shadow-md ${
+                !isScrolled && "hover:bg-cyan-700 shadow-xl"
               }`}
             >
               About
             </li>
             <li
-              className={`hover:scale-105 transition duration-300 cursor-pointer  p-2 hover:shadow-md ${
-                !isScrolled && "hover:text-white"
+              className={`hover:scale-110 transition duration-300 cursor-pointer font-bold  p-2 hover:shadow-md ${
+                !isScrolled && "hover:bg-cyan-700 shadow-xl"
               }`}
             >
               Services
             </li>
             <li
-              className={`hover:scale-105 transition duration-300 cursor-pointer  p-2 hover:shadow-md ${
-                !isScrolled && "hover:text-white"
+              className={`hover:scale-110 transition duration-300 cursor-pointer font-bold p-2 hover:shadow-md ${
+                !isScrolled && "hover:bg-cyan-700 shadow-xl"
               }`}
             >
               Contact
@@ -72,7 +63,7 @@ export const Navbar: React.FC = () => {
           <div className="block md:hidden">
             <IoMenu
               className={`size-8 ${
-                isScrolled ? "text-gray-950" : "text-white"
+                isScrolled ? "text-gray-950" : "text-gray-950"
               }`}
             />
           </div>
