@@ -8,12 +8,8 @@ export const Mission: React.FC = () => {
     <>
       <div
         id="mission"
-        className=" bg-gradient-to-t bg-white py-[30px] md:py-[100px]"
+        className=" bg-gradient-to-t bg-white py-[10px] md:py-[100px]"
       >
-        <h1 className="text-center text-2xl md:text-4xl text-white mb-5">
-          Your Trusted Partner in Real Estate – Buying, Selling & Investing Made
-          Simple.
-        </h1>
         <div className="flex flex-col md:flex-row gap-5  space-around mx-auto max-w-[1400px] ">
           <div className="w-full flex items-center justify-center">
             <div className="px-3">
