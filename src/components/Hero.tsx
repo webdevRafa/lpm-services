@@ -1,21 +1,21 @@
-import { useEffect, useState } from "react";
-import house from "../assets/pics/color-bg.jpg";
+// import { useEffect, useState } from "react";
+// import house from "../assets/pics/color-bg.jpg";
 import videosrc from "../assets/videos/Bridgewalk.mp4";
 
 export const Hero: React.FC = () => {
-  const [scale, setScale] = useState(1);
+  // const [scale, setScale] = useState(1);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const newScale = 1 + scrollY / 1000; // feel free to tweak this ratio
-      setScale(newScale > 1.5 ? 1.5 : newScale);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollY = window.scrollY;
+  //     const newScale = 1 + scrollY / 1000; // feel free to tweak this ratio
+  //     setScale(newScale > 1.5 ? 1.5 : newScale);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <>
