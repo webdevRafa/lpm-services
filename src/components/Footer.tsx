@@ -8,8 +8,8 @@ export const Footer: React.FC = () => {
           <div>
             <h1 className="text-white">PLACES YOU CAN FIND ME..</h1>
           </div>
-          <a href="https://www.youtube.com/@letstalkrealestatedavid?si=RSBozB-alHAIg-nb">
-            <ImYoutube2 className="text-white size-40 hover:text-red-700 cursor-pointer transition ease-in-out duration-300" />
+          <a href="https://www.youtube.com/@letstalkrealestatedavid">
+            <ImYoutube2 className="text-white size-40 hover:text-red-500 cursor-pointer transition ease-in-out duration-300" />
           </a>
         </div>
       </div>
