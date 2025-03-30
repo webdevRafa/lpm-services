@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import house from "../assets/pics/color-bg.jpg";
+import videosrc from "../assets/videos/Bridgewalk.mp4";
 
 export const Hero: React.FC = () => {
   const [scale, setScale] = useState(1);
@@ -36,7 +37,7 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* BG IMAGE */}
-        <div className="absolute top-0 left-0 w-full h-[600px] z-[-10]">
+        {/* <div className="absolute top-0 left-0 w-full h-[600px] z-[-10]">
           <img
             className="object-cover bg-image fixed"
             style={{
@@ -47,7 +48,15 @@ export const Hero: React.FC = () => {
             src={house}
             alt=""
           />
-        </div>
+        </div> */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="opacity-90 absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+          src={videosrc}
+        ></video>
       </div>
     </>
   );
