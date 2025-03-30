@@ -31,28 +31,28 @@ export const Navbar: React.FC = () => {
           <ul className={`relative hidden md:flex gap-2 text-gray-950 `}>
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold  p-2 hover:shadow-md  ${
-                !isScrolled && "hover:bg-cyan-700 shadow-xl"
+                !isScrolled && "hover:bg-cyan-700 hover:text-white shadow-xl"
               }`}
             >
               Home
             </li>
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold p-2 hover:shadow-md ${
-                !isScrolled && "hover:bg-cyan-700 shadow-xl"
+                !isScrolled && "hover:bg-cyan-700 hover:text-white shadow-xl"
               }`}
             >
               About
             </li>
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold  p-2 hover:shadow-md ${
-                !isScrolled && "hover:bg-cyan-700 shadow-xl"
+                !isScrolled && "hover:bg-cyan-700 hover:text-white shadow-xl"
               }`}
             >
               Services
             </li>
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold p-2 hover:shadow-md ${
-                !isScrolled && "hover:bg-cyan-700 shadow-xl"
+                !isScrolled && "hover:bg-cyan-700 hover:text-white shadow-xl"
               }`}
             >
               Contact
