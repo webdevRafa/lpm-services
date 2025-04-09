@@ -23,11 +23,11 @@ export const Mission: React.FC = () => {
               alt=""
             />
             {/* HEADLINE DIV */}
-            <div className="pointer-events-none absolute top-0 left-0 w-full  bg-gray-900 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <div className="z-40 pointer-events-none absolute top-0 left-0 w-full  bg-gray-900 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
               <h1 className="text-white">LIST YOUR HOME</h1>
             </div>
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-gray-900 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="z-50 absolute bottom-0 left-0 w-full h-[130px] group bg-gray-900 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white mb-2 text-center">
                   interested in listing your home on the market?
