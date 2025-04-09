@@ -46,14 +46,15 @@ export const InvestorNetwork: React.FC = () => {
     }
     return <>
     <Hero />
-    <div className="max-w-[1200px] mx-auto py-[100px] flex flex-col md:flex-row gap-25 items-center justify-center">
+  <div className="bg-gray-950">
+  <div className="max-w-[1200px] mx-auto py-[100px] flex flex-col md:flex-row gap-25 items-center justify-center">
 <a href="https://www.instagram.com/david24_7realestate/">
     <div className="w-full min-w-[600px] bg-gray-900 h-[600px]">
         <IgEmbed />
         </div> 
 </a>
    <div className="w-full min-w-[800px]">
-   <h1 className="text-gray-800 font-bold text-2xl md:text-5xl text-center mb-5">
+   <h1 className="text-white font-bold text-2xl md:text-5xl text-center mb-5">
             LOOKING FOR OFF MARKET DEALS?
           </h1>
         <form onSubmit={handleSubmit} className="bg-gray-900 text-xl font-bold mb-4 shadow-md px-10 py-20">
@@ -87,6 +88,7 @@ export const InvestorNetwork: React.FC = () => {
         </form>
    </div>
     </div>
+  </div>
     <Footer />
     </>
 }

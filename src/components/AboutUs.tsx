@@ -1,7 +1,7 @@
 export const AboutUs: React.FC = () => {
   return (
     <>
-      <div className="w-full py-[200px] flex items-center justify-center">
+      <div className="w-full py-[200px] flex flex-col items-center justify-center">
         <div className="p-5 w-full mx-auto max-w-[1400px] shadow-md ">
           <h1 className="text-gray-900 text-center text-xl font-bold md:text-2xl lg:text-4xl mb-10">
             At Leaked Proof Management Services, we are dedicated to guiding you
@@ -36,6 +36,11 @@ export const AboutUs: React.FC = () => {
             </span>
             , making your real estate journey a success.
           </p>
+        </div>
+
+        {/* YOUTUBE VIDEO */}
+        <div className="bg-white shadow-md h-[300px] mt-20 w-full flex items-center justify-center">
+          <h1 className="text-6xl">VIDEO GOES HERE</h1>
         </div>
       </div>
     </>

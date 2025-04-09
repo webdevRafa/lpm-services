@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import darkLogo from "./assets/dark-logo.svg";
 import { Link } from "react-router-dom";
-
 import { IoMenu } from "react-icons/io5";
 
 export const Navbar: React.FC = () => {
@@ -56,7 +55,7 @@ export const Navbar: React.FC = () => {
                 !isScrolled && "hover:bg-cyan-700 hover:text-white shadow-xl"
               }`}
             >
-              Contact
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
 
