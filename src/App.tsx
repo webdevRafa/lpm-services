@@ -4,6 +4,7 @@ import { Navbar } from "./Navbar";
 import { About } from "./pages/About";
 import { Routes, Route } from "react-router-dom";
 import { Offer } from "./pages/Offer";
+import { InvestorNetwork } from "./pages/InvestorNetwork";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/offer" element={<Offer />} />
+        <Route path="/investornetwork" element={<InvestorNetwork />} />
       </Routes>
     </>
   );

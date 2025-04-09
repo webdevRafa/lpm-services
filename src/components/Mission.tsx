@@ -16,6 +16,7 @@ export const Mission: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-5  space-around mx-auto max-w-[1400px] "></div>
         <div className="w-full mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 px-10">
           {/* CARD 1 */}
+          <a href="https://www.onereal.com/david-martinez-1">
           <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[500px]">
             <img
               className="h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
@@ -40,6 +41,8 @@ export const Mission: React.FC = () => {
               </div>
             </div>
           </div>
+          </a>
+         
 
           {/*  CARD 2 */}
           <div className="w-full rounded-lg shadow-md overflow-hidden h-[500px] relative group bg-cyan">
@@ -76,16 +79,16 @@ export const Mission: React.FC = () => {
             />
             {/* HEADLINE DIV */}
             <div className="pointer-events-none absolute top-0 left-0 w-full  bg-gray-900 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
-              <h1 className="text-white">IN THE MARKET FOR A NEW HOME?</h1>
+              <h1 className="text-white">LOOKING TO BUY OFF MARKET DEALS?</h1>
             </div>
             {/* SLIDER DIV */}
             <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-gray-900 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white text-center mb-2">
-                  we can help you find the right one for you
+                  SIGN UP HERE
                 </h1>
-                <button className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
-                  get started
+                <button onClick={() => navigate('/investornetwork')} className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
+                  GET STARTED
                 </button>
               </div>
             </div>

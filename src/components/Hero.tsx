@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
             Confidence.
           </p>
           <a href="#mission">
-            <button className="cursor-pointer block mx-auto border-3 text-sm border-slate-950 text-slate-950 rounded-md transition hover:border-cyan-500 hover:text-slate-800 font-bold hover:bg-cyan-500 duration-500 ease-in-out p-2 mt-5">
+            <button className="cursor-pointer block mx-auto border-3 text-sm border-slate-950 text-slate-950 rounded-md transition hover:border-gray-950 hover:text-white font-bold hover:bg-gray-800 duration-400 ease-in-out p-2 mt-5">
               LEARN MORE
             </button>
           </a>

@@ -9,18 +9,18 @@ interface  FormData {
     lastName: string
     phone: string
     email: string
-    address: string
+    location: string
 }
 
 
 
-export const Offer: React.FC = () => {
+export const InvestorNetwork: React.FC = () => {
     const [formData, setFormData] = useState<FormData>({
         firstName: '',
         lastName: '',
         phone: '',
         email: '',
-        address: '',
+        location: '',
     })
     
     const handleChange = (
@@ -41,7 +41,7 @@ export const Offer: React.FC = () => {
             lastName: '',
             phone: '',
             email: '',
-            address: '',
+            location: '',
         })
     }
     return <>
@@ -54,7 +54,7 @@ export const Offer: React.FC = () => {
 </a>
    <div className="w-full min-w-[800px]">
    <h1 className="text-gray-800 font-bold text-2xl md:text-5xl text-center mb-5">
-            GET AN OFFER FAST
+            LOOKING FOR OFF MARKET DEALS?
           </h1>
         <form onSubmit={handleSubmit} className="bg-gray-900 text-xl font-bold mb-4 shadow-md px-10 py-20">
           <div className="flex gap-5">
@@ -63,7 +63,28 @@ export const Offer: React.FC = () => {
           </div>
             <input type="text" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone Number" className="my-3 bg-white w-full p-2 mb-2 border-rounded"/>
             <input type="text" name="email" value={formData.email} onChange={handleChange} placeholder="Email" className="my-3 bg-white w-full p-2 mb-2 border-rounded"/>
-            <input type="text" name="address" value={formData.address} onChange={handleChange} placeholder="Please provide an address" className="my-3 bg-white w-full p-2 mb-2 border-rounded"/>
+            <input type="text" name="location" value={formData.location} onChange={handleChange} placeholder="Where are you buying?" className="my-3 bg-white w-full p-2 mb-2 border-rounded"/>
+            <div className="flex gap-5">
+            <label className="block text-white text-sm font-bold mb-2" htmlFor="propertyType">
+  Type of Property
+</label>
+<select
+  id="propertyType"
+  name="propertyType"
+  value={formData.propertyType}
+  onChange={handleChange}
+  className="w-full px-3 py-2 border rounded-md bg-white text-gray-800"
+>
+  <option value="">Select a property type</option>
+  <option value="single-family">Single-Family</option>
+  <option value="multi-family">Multi-Family</option>
+  <option value="condo">Condo</option>
+  <option value="townhouse">Townhouse</option>
+  <option value="land">Vacant Land</option>
+  <option value="mobile-home">Mobile Home</option>
+  <option value="other">Other</option>
+</select>
+            </div>
             <button type="submit" className="mx-auto block bg-gray-800 text-white px-4 py-2 rounded hover:bg-red-900 mt-10">SUBMIT</button>
         </form>
    </div>
