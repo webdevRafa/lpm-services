@@ -1,8 +1,8 @@
 export const AboutUs: React.FC = () => {
   return (
     <>
-      <div className="w-full py-[30px] flex items-center justify-center">
-        <div className="px-3 w-full mx-auto max-w-[1400px]">
+      <div className="w-full py-[200px] flex items-center justify-center">
+        <div className="p-5 w-full mx-auto max-w-[1400px] shadow-md ">
           <h1 className="text-gray-900 text-center text-xl font-bold md:text-2xl lg:text-4xl mb-10">
             At Leaked Proof Management Services, we are dedicated to guiding you
             through every step of the real estate investing process with clarity

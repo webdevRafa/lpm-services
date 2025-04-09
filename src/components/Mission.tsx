@@ -2,8 +2,11 @@ import image from "../assets/pics/fancy.jpg";
 import inside from "../assets/pics/room.jpg";
 import kitchen from "../assets/pics/kitchen.jpg";
 import construction from "../assets/pics/construction.jpg";
+import { useNavigate } from "react-router-dom";
 
 export const Mission: React.FC = () => {
+  const navigate = useNavigate();
+  
   return (
     <>
       <div
@@ -20,11 +23,11 @@ export const Mission: React.FC = () => {
               alt=""
             />
             {/* HEADLINE DIV */}
-            <div className="absolute top-0 left-0 w-full  bg-cyan-700 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <div className="pointer-events-none absolute top-0 left-0 w-full  bg-gray-900 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
               <h1 className="text-white">LIST YOUR HOME</h1>
             </div>
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-cyan-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-gray-900 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white mb-2 text-center">
                   interested in listing your home on the market?
@@ -47,17 +50,17 @@ export const Mission: React.FC = () => {
             />
 
             {/* HEADLINE DIV */}
-            <div className="absolute top-0 left-0 w-full  bg-cyan-700 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <div className="pointer-events-none absolute top-0 left-0 w-full  bg-gray-900 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
               <h1 className="text-white">NEED TO SELL FAST?</h1>
             </div>
 
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-cyan-700 px-2 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-gray-900 px-2 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white text-center mb-2">
                   If you're needing to sell in any condition and fast..
                 </h1>
-                <button className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
+                <button onClick={() => navigate('/offer')} className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
                   GET AN OFFER FAST
                 </button>
               </div>
@@ -72,11 +75,11 @@ export const Mission: React.FC = () => {
               alt=""
             />
             {/* HEADLINE DIV */}
-            <div className="absolute top-0 left-0 w-full  bg-cyan-700 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
-              <h1 className="text-white">Want to buy a brand new home?</h1>
+            <div className="pointer-events-none absolute top-0 left-0 w-full  bg-gray-900 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+              <h1 className="text-white">IN THE MARKET FOR A NEW HOME?</h1>
             </div>
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-cyan-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-gray-900 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white text-center mb-2">
                   we can help you find the right one for you
@@ -95,11 +98,11 @@ export const Mission: React.FC = () => {
               alt=""
             />
             {/* HEADLINE DIV */}
-            <div className="absolute top-0 left-0 w-full  bg-cyan-700 flex items-center justify-center py-3 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <div className="pointer-events-none absolute top-0 left-0 w-full  bg-gray-900 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
               <h1 className="text-white">WANT TO BUY A BRAND NEW HOME?</h1>
             </div>
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-cyan-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-gray-900 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white text-center mb-2">
                   START YOUR BRAND NEW HOME JOURNEY
