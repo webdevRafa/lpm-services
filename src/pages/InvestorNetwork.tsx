@@ -71,8 +71,6 @@ export const InvestorNetwork: React.FC = () => {
 <select
   id="propertyType"
   name="propertyType"
-  value={formData.propertyType}
-  onChange={handleChange}
   className="w-full px-3 py-2 border rounded-md bg-white text-gray-800"
 >
   <option value="">Select a property type</option>
