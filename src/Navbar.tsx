@@ -28,31 +28,31 @@ export const Navbar: React.FC = () => {
           <img src={darkLogo} className="max-h-[60px]" alt="" />
 
           {/* desktop menu */}
-          <ul className={`relative hidden md:flex gap-2 text-gray-950 `}>
+          <ul className={`relative hidden md:flex gap-2 text-slate-700 `}>
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold  p-2 hover:shadow-md  ${
-                !isScrolled && "hover:bg-cyan-700 hover:text-white shadow-xl"
+                !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
               }`}
             >
               <Link to="/">Home</Link>
             </li>
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold p-2 hover:shadow-md ${
-                !isScrolled && "hover:bg-cyan-700 hover:text-white shadow-xl"
+                !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
               }`}
             >
               <Link to="/about">About</Link>
             </li>
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold  p-2 hover:shadow-md ${
-                !isScrolled && "hover:bg-cyan-700 hover:text-white shadow-xl"
+                !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
               }`}
             >
               Services
             </li>
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold p-2 hover:shadow-md ${
-                !isScrolled && "hover:bg-cyan-700 hover:text-white shadow-xl"
+                !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
               }`}
             >
               <Link to="/contact">Contact</Link>
@@ -63,7 +63,7 @@ export const Navbar: React.FC = () => {
           <div className="block md:hidden">
             <IoMenu
               className={`size-8 ${
-                isScrolled ? "text-gray-950" : "text-gray-950"
+                isScrolled ? "text-slate-700" : "text-slate-700"
               }`}
             />
           </div>

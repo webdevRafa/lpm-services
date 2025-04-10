@@ -8,9 +8,11 @@ export const Home: React.FC = () => {
     <>
       <div>
         <Hero />
-        <Mission />
+       <div className="bg-slate-100 py-5">
+       <Mission />
         <Services />
 
+       </div>
         <Footer />
       </div>
     </>

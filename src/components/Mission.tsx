@@ -11,24 +11,24 @@ export const Mission: React.FC = () => {
     <>
       <div
         id="mission"
-        className=" bg-gradient-to-t bg-white py-[10px] md:py-[100px]"
+        className=" bg-gradient-to-t bg-white py-[10px] md:py-[50px] max-w-[2000px] mx-auto mb-5 "
       >
-        <div className="flex flex-col md:flex-row gap-5  space-around mx-auto max-w-[1400px] "></div>
-        <div className="w-full mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 px-10">
+       
+        <div className="w-full mt-10 grid grid-cols-1 md:grid-cols-2  gap-5 px-10">
           {/* CARD 1 */}
-          <a href="https://www.onereal.com/david-martinez-1">
+          <a className="p-5 rounded-lg shadow-md" href="https://www.onereal.com/david-martinez-1">
           <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[500px]">
             <img
-              className="h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
+              className="shadow-lg h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={image}
               alt=""
             />
             {/* HEADLINE DIV */}
-            <div className="z-40 pointer-events-none absolute top-0 left-0 w-full  bg-gray-900 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <div className="z-40 pointer-events-none absolute top-0 left-0 w-full  bg-slate-700 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
               <h1 className="text-white">LIST YOUR HOME</h1>
             </div>
             {/* SLIDER DIV */}
-            <div className="z-50 absolute bottom-0 left-0 w-full h-[130px] group bg-gray-900 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="z-50 absolute bottom-0 left-0 w-full h-[130px] group bg-slate-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white mb-2 text-center">
                   interested in listing your home on the market?
@@ -45,7 +45,8 @@ export const Mission: React.FC = () => {
          
 
           {/*  CARD 2 */}
-          <div className="w-full rounded-lg shadow-md overflow-hidden h-[500px] relative group bg-cyan">
+       <div onClick={() => navigate('/offer')} className="p-5 rounded-lg shadow-md">
+       <div className="w-full rounded-lg shadow-md overflow-hidden h-[500px] relative group bg-cyan">
             <img
               className="hover:scale-130 object-cover group-hover:scale-130 group-hover:brightness-50 h-full w-full transition duration-1000 ease-in-out"
               src={inside}
@@ -53,12 +54,12 @@ export const Mission: React.FC = () => {
             />
 
             {/* HEADLINE DIV */}
-            <div className="pointer-events-none absolute top-0 left-0 w-full  bg-gray-900 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <div className="pointer-events-none absolute top-0 left-0 w-full  bg-slate-700 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
               <h1 className="text-white">NEED TO SELL FAST?</h1>
             </div>
 
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-gray-900 px-2 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-700 px-2 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white text-center mb-2">
                   If you're needing to sell in any condition and fast..
@@ -69,20 +70,22 @@ export const Mission: React.FC = () => {
               </div>
             </div>
           </div>
+       </div>
 
           {/* CARD 3 */}
-          <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[500px]">
+       <div onClick={() => navigate('/investornetwork')} className=" p-5 rounded-lg shadow-md">
+       <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[500px]">
             <img
               className="h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={kitchen}
               alt=""
             />
             {/* HEADLINE DIV */}
-            <div className="pointer-events-none absolute top-0 left-0 w-full  bg-gray-900 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <div className="pointer-events-none absolute top-0 left-0 w-full  bg-slate-700 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
               <h1 className="text-white">LOOKING TO BUY OFF MARKET DEALS?</h1>
             </div>
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-gray-900 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white text-center mb-2">
                   SIGN UP HERE
@@ -93,7 +96,9 @@ export const Mission: React.FC = () => {
               </div>
             </div>
           </div>
+       </div>
           {/* CARD 4 */}
+          <div onClick={() => navigate('/offer')} className="p-5 rounded-lg shadow-md ">
           <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[500px]">
             <img
               className="h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
@@ -101,11 +106,11 @@ export const Mission: React.FC = () => {
               alt=""
             />
             {/* HEADLINE DIV */}
-            <div className="pointer-events-none absolute top-0 left-0 w-full  bg-gray-900 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <div className="pointer-events-none absolute top-0 left-0 w-full  bg-slate-700 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
               <h1 className="text-white">WANT TO BUY A BRAND NEW HOME?</h1>
             </div>
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-gray-900 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
                 <h1 className="text-white text-center mb-2">
                   START YOUR BRAND NEW HOME JOURNEY
@@ -117,6 +122,7 @@ export const Mission: React.FC = () => {
                 </a>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

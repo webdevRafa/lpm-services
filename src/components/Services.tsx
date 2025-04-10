@@ -8,7 +8,7 @@ export const Services: React.FC = () => {
       <div className="w-full py-20  bg-white">
         <div className="flex flex-col md:flex-row gap-20 px-10 w-full  justify-center mx-auto">
           <div className="p-5 shadow-md">
-            <MdRealEstateAgent className="size-40 mb-5 mx-auto text-white bg-slate-900 rounded-full p-2" />
+            <MdRealEstateAgent className="size-40 mb-5 mx-auto text-white bg-slate-700 rounded-full p-2" />
 
             <h1 className="text-center text-3xl">Hassle-Free Selling</h1>
             <p className="text-gray-500 text-center">
@@ -18,7 +18,7 @@ export const Services: React.FC = () => {
             </p>
           </div>
           <div className="p-5 shadow-md">
-            <AiOutlineStock className="size-40 mb-5 mx-auto text-white bg-slate-900 rounded-full p-2" />
+            <AiOutlineStock className="size-40 mb-5 mx-auto text-white bg-slate-700 rounded-full p-2" />
 
             <h1 className="text-center text-3xl">
               Exclusive Listings & Off-Market Deals
@@ -30,7 +30,7 @@ export const Services: React.FC = () => {
             </p>
           </div>
           <div className="p-5 shadow-md">
-            <GiReceiveMoney className="size-40 mb-5 mx-auto text-white bg-slate-900 rounded-full p-2" />
+            <GiReceiveMoney className="size-40 mb-5 mx-auto text-white bg-slate-700 rounded-full p-2" />
 
             <h1 className="text-center text-3xl">
               Investor-Friendly Opportunities

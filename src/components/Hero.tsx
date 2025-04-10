@@ -21,8 +21,8 @@ export const Hero: React.FC = () => {
     <>
       <div className="flex items-center justify-center relative h-[600px]">
         <div>
-          <h1 className="text-gray-800 font-bold text-5xl md:text-6xl text-center">
-            Leaked Proof Management Services
+          <h1 className="text-slate-700 font-bold text-5xl md:text-6xl text-center">
+            LEAKED PROOF MANAGEMENT SERVICES
           </h1>
 
           <p className="text-slate-800 text-center text-sm md:text-lg mt-3 mx-4">
@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
             Confidence.
           </p>
           <a href="#mission">
-            <button className="cursor-pointer block mx-auto border-3 text-sm border-slate-950 text-slate-950 rounded-md transition hover:border-gray-950 hover:text-white font-bold hover:bg-gray-800 duration-400 ease-in-out p-2 mt-5">
+            <button className="cursor-pointer block mx-auto border-3 text-sm border-slate-950 text-slate-950 rounded-md transition hover:border-gray-950 hover:text-white font-bold hover:bg-slate-700 duration-400 ease-in-out p-2 mt-5">
               LEARN MORE
             </button>
           </a>
