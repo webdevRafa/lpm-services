@@ -11,10 +11,10 @@ export const Mission: React.FC = () => {
     <>
       <div
         id="mission"
-        className=" bg-gradient-to-t bg-white py-[10px] md:py-[50px] max-w-[2000px] mx-auto mb-5 "
+        className=" bg-gradient-to-t bg-white py-[20px] md:py-[50px] max-w-[2000px] mx-auto mb-5 "
       >
        
-        <div className="w-full mt-10 grid grid-cols-1 md:grid-cols-2  gap-5 px-10">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2  gap-5 px-10">
           {/* CARD 1 */}
           <a className="p-5 rounded-lg shadow-md" href="https://www.onereal.com/david-martinez-1">
           <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[500px]">
@@ -25,13 +25,13 @@ export const Mission: React.FC = () => {
             />
             {/* HEADLINE DIV */}
             <div className="z-40 pointer-events-none absolute top-0 left-0 w-full  bg-slate-700 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
-              <h1 className="text-white">LIST YOUR HOME</h1>
+              <h1 className="text-white text-sm">LIST YOUR HOME</h1>
             </div>
             {/* SLIDER DIV */}
             <div className="z-50 absolute bottom-0 left-0 w-full h-[130px] group bg-slate-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
-                <h1 className="text-white mb-2 text-center">
-                  interested in listing your home on the market?
+                <h1 className="text-sm text-white mb-2 text-center">
+                  INTERESTED IN LISTING YOUR HOME ON THE MARKET?
                 </h1>
                 <a href="https://www.onereal.com/david-martinez-1">
                   <button className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
@@ -55,14 +55,14 @@ export const Mission: React.FC = () => {
 
             {/* HEADLINE DIV */}
             <div className="pointer-events-none absolute top-0 left-0 w-full  bg-slate-700 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
-              <h1 className="text-white">NEED TO SELL FAST?</h1>
+              <h1 className="text-sm text-white">NEED TO SELL FAST?</h1>
             </div>
 
             {/* SLIDER DIV */}
             <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-700 px-2 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
-                <h1 className="text-white text-center mb-2">
-                  If you're needing to sell in any condition and fast..
+                <h1 className="text-sm text-white text-center mb-2">
+                 IF YOU'RE NEEDING TO SELL IN ANY CONDITION FAST
                 </h1>
                 <button onClick={() => navigate('/offer')} className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
                   GET AN OFFER FAST
@@ -82,12 +82,12 @@ export const Mission: React.FC = () => {
             />
             {/* HEADLINE DIV */}
             <div className="pointer-events-none absolute top-0 left-0 w-full  bg-slate-700 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
-              <h1 className="text-white">LOOKING TO BUY OFF MARKET DEALS?</h1>
+              <h1 className="text-sm text-white">LOOKING TO BUY OFF MARKET DEALS?</h1>
             </div>
             {/* SLIDER DIV */}
             <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
-                <h1 className="text-white text-center mb-2">
+                <h1 className="text-sm text-white text-center mb-2">
                   SIGN UP HERE
                 </h1>
                 <button onClick={() => navigate('/investornetwork')} className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
@@ -107,17 +107,17 @@ export const Mission: React.FC = () => {
             />
             {/* HEADLINE DIV */}
             <div className="pointer-events-none absolute top-0 left-0 w-full  bg-slate-700 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
-              <h1 className="text-white">WANT TO BUY A BRAND NEW HOME?</h1>
+              <h1 className="text-sm text-white">WANT TO BUY A BRAND NEW HOME?</h1>
             </div>
             {/* SLIDER DIV */}
             <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
-                <h1 className="text-white text-center mb-2">
+                <h1 className="text-sm text-white text-center mb-2">
                   START YOUR BRAND NEW HOME JOURNEY
                 </h1>
                 <a href="https://www.showingnew.com/davidmartinez210">
                   <button className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
-                    click here
+                    GET STARTED
                   </button>
                 </a>
               </div>

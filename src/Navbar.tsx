@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import darkLogo from "./assets/dark-logo.svg";
+import darkLogo from "./assets/lpm-slate.svg";
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 
@@ -34,28 +34,28 @@ export const Navbar: React.FC = () => {
                 !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
               }`}
             >
-              <Link to="/">Home</Link>
+              <Link to="/">HOME</Link>
             </li>
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold p-2 hover:shadow-md ${
                 !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
               }`}
             >
-              <Link to="/about">About</Link>
+              <Link to="/about">ABOUT</Link>
             </li>
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold  p-2 hover:shadow-md ${
                 !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
               }`}
             >
-              Services
+              SERVICES
             </li>
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold p-2 hover:shadow-md ${
                 !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
               }`}
             >
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact">CONTACT</Link>
             </li>
           </ul>
 
