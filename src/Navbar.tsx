@@ -29,20 +29,24 @@ export const Navbar: React.FC = () => {
 
           {/* desktop menu */}
           <ul className={`relative hidden md:flex gap-2 text-slate-700 `}>
+            <Link to="/">
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold  p-2 hover:shadow-md  ${
                 !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
               }`}
             >
-              <Link to="/">HOME</Link>
+              HOME
             </li>
+            </Link>
+            <Link to="/about">
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold p-2 hover:shadow-md ${
                 !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
               }`}
             >
-              <Link to="/about">ABOUT</Link>
+             ABOUT
             </li>
+            </Link>
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold  p-2 hover:shadow-md ${
                 !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
@@ -50,13 +54,15 @@ export const Navbar: React.FC = () => {
             >
               SERVICES
             </li>
+            <Link to="/contact">
             <li
               className={`hover:scale-110 transition duration-300 cursor-pointer font-bold p-2 hover:shadow-md ${
                 !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
               }`}
             >
-              <Link to="/contact">CONTACT</Link>
+            CONTACT
             </li>
+            </Link>
           </ul>
 
           {/* mobile menu */}

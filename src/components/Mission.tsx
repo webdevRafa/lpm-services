@@ -17,7 +17,7 @@ export const Mission: React.FC = () => {
         <div className="w-full grid grid-cols-1 md:grid-cols-2  gap-5 px-10">
           {/* CARD 1 */}
           <a className="p-5 rounded-lg shadow-md" href="https://www.onereal.com/david-martinez-1">
-          <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[500px]">
+          <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[500px] hover:shadow-2xl">
             <img
               className="shadow-lg h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={image}

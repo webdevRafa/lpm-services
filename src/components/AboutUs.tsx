@@ -1,8 +1,10 @@
+import videosrc from "../assets/videos/setup.mp4";
+
 export const AboutUs: React.FC = () => {
   return (
     <>
-      <div className="w-full py-[200px] flex flex-col items-center justify-center">
-        <div className="p-5 w-full mx-auto max-w-[1400px] shadow-md ">
+      <div className="w-full md:py-[50px] flex flex-col md:flex-row items-center  lg:items-end justify-center max-w-[1400px] mx-auto">
+        <div className="p-5 w-full h-full mx-auto max-w-[1400px] shadow-md hover:shadow-xl transition duration-300 ease-in-out ">
           <h1 className="text-gray-900 text-center text-xl font-bold md:text-2xl lg:text-4xl mb-10">
             At Leaked Proof Management Services, we are dedicated to guiding you
             through every step of the real estate investing process with clarity
@@ -39,8 +41,17 @@ export const AboutUs: React.FC = () => {
         </div>
 
         {/* YOUTUBE VIDEO */}
-        <div className="bg-white shadow-md h-[300px] mt-20 w-full flex items-center justify-center">
-          <h1 className="text-6xl">VIDEO GOES HERE</h1>
+        <div className="my-10 md:my-0 bg-white shadow-md h-full w-full max-w-[200px] flex items-center justify-center">
+       
+         <video
+          autoPlay
+          loop
+          muted
+          className="h-full w-full object-cover"
+          playsInline
+          src={videosrc}
+        ></video>
+     
         </div>
       </div>
     </>

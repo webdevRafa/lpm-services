@@ -44,19 +44,19 @@ export const Offer: React.FC = () => {
             address: '',
         })
     }
-    return <>
+    return <> 
     <Hero />
-    <div className="max-w-[1200px] mx-auto py-[100px] flex flex-col md:flex-row gap-25 items-center justify-center">
-<a href="https://www.instagram.com/david24_7realestate/">
-    <div className="w-full min-w-[600px] bg-gray-900 h-[600px]">
+    <div className="max-w-[1200px] mx-auto w-full my-10 md:py-[100px] flex flex-col md:flex-row gap-5 items-center justify-center">
+<a className="w-full shadow-lg" href="https://www.instagram.com/david24_7realestate/">
+    <div className="w-full h-[300px] md:h-[600px]">
         <IgEmbed />
         </div> 
 </a>
-   <div className="w-full min-w-[800px]">
-   <h1 className="text-gray-800 font-bold text-2xl md:text-5xl text-center mb-5">
+   <div className="w-full">
+   <h1 className="text-gray-700  text-2xl md:text-5xl text-center mb-5">
             GET AN OFFER FAST
           </h1>
-        <form onSubmit={handleSubmit} className="bg-gray-900 text-xl font-bold mb-4 shadow-md px-10 py-20">
+        <form onSubmit={handleSubmit} className="bg-gray-700 text-xl font-bold mb-4 shadow-md px-2 md:px-10 py-20">
           <div className="flex gap-5">
           <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="First Name" className="my-3 bg-white w-full p-2 mb-2 border-rounded"/>
           <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Last Name" className="my-3 bg-white w-full p-2 mb-2 border-rounded"/>
