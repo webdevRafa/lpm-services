@@ -5,8 +5,10 @@ export const About: React.FC = () => {
   return (
     <>
       <Hero />
-      <AboutUs />
-      <Footer />
+     <div className="offwhite">
+     <AboutUs />
+     <Footer />
+     </div>
     </>
   );
 };

@@ -8,7 +8,7 @@ export const Home: React.FC = () => {
     <>
       <div>
         <Hero />
-       <div className="bg-slate-100 py-5">
+       <div className="offwhite py-5">
        <Mission />
         <Services />
 

@@ -11,13 +11,13 @@ export const Mission: React.FC = () => {
     <>
       <div
         id="mission"
-        className=" bg-gradient-to-t bg-white py-[20px] md:py-[50px] max-w-[2000px] mx-auto mb-5 "
+        className=" bg-gradient-to-t  py-[20px] max-w-[1800px] mx-auto mb-5 "
       >
        
         <div className="w-full grid grid-cols-1 md:grid-cols-2  gap-5 px-10">
           {/* CARD 1 */}
-          <a className="p-5 rounded-lg shadow-md" href="https://www.onereal.com/david-martinez-1">
-          <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[500px] hover:shadow-2xl">
+          <a className="p-5 rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl" href="https://www.onereal.com/david-martinez-1">
+          <div className="w-full rounded-lg overflow-hidden relative group h-[350px] md:h-[450px] hover:shadow-2xl">
             <img
               className="shadow-lg h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={image}
@@ -34,7 +34,7 @@ export const Mission: React.FC = () => {
                   INTERESTED IN LISTING YOUR HOME ON THE MARKET?
                 </h1>
                 <a href="https://www.onereal.com/david-martinez-1">
-                  <button className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
+                  <button className="cursor-pointer block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
                     GET STARTED
                   </button>
                 </a>
@@ -45,8 +45,8 @@ export const Mission: React.FC = () => {
          
 
           {/*  CARD 2 */}
-       <div onClick={() => navigate('/offer')} className="p-5 rounded-lg shadow-md">
-       <div className="w-full rounded-lg shadow-md overflow-hidden h-[500px] relative group bg-cyan">
+       <div onClick={() => navigate('/offer')} className="p-5 rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
+       <div className="w-full rounded-lg overflow-hidden h-[350px] md:h-[450px] relative group bg-cyan">
             <img
               className="hover:scale-130 object-cover group-hover:scale-130 group-hover:brightness-50 h-full w-full transition duration-1000 ease-in-out"
               src={inside}
@@ -64,7 +64,7 @@ export const Mission: React.FC = () => {
                 <h1 className="text-sm text-white text-center mb-2">
                  IF YOU'RE NEEDING TO SELL IN ANY CONDITION FAST
                 </h1>
-                <button onClick={() => navigate('/offer')} className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
+                <button onClick={() => navigate('/offer')} className="cursor-pointer block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
                   GET AN OFFER FAST
                 </button>
               </div>
@@ -73,8 +73,8 @@ export const Mission: React.FC = () => {
        </div>
 
           {/* CARD 3 */}
-       <div onClick={() => navigate('/investornetwork')} className=" p-5 rounded-lg shadow-md">
-       <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[500px]">
+       <div onClick={() => navigate('/investornetwork')} className="p-5 rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
+       <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[350px] md:h-[450px]">
             <img
               className="h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={kitchen}
@@ -90,7 +90,7 @@ export const Mission: React.FC = () => {
                 <h1 className="text-sm text-white text-center mb-2">
                   SIGN UP HERE
                 </h1>
-                <button onClick={() => navigate('/investornetwork')} className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
+                <button onClick={() => navigate('/investornetwork')} className="cursor-pointer block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
                   GET STARTED
                 </button>
               </div>
@@ -98,8 +98,8 @@ export const Mission: React.FC = () => {
           </div>
        </div>
           {/* CARD 4 */}
-          <div onClick={() => navigate('/offer')} className="p-5 rounded-lg shadow-md ">
-          <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[500px]">
+          <div onClick={() => navigate('/offer')} className="p-5 rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
+          <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[350px] md:h-[450px]">
             <img
               className="h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={construction}
@@ -116,7 +116,7 @@ export const Mission: React.FC = () => {
                   START YOUR BRAND NEW HOME JOURNEY
                 </h1>
                 <a href="https://www.showingnew.com/davidmartinez210">
-                  <button className="block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
+                  <button className="cursor-pointer block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
                     GET STARTED
                   </button>
                 </a>
