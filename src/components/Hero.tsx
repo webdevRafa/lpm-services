@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
     <>
       <div className="flex items-center justify-center relative h-[600px]">
         <div>
-          <h1 className="text-slate-700 font-bold text-5xl md:text-6xl text-center">
+          <h1 className="text-slate-700   text-5xl md:text-6xl text-center">
             LEAKED PROOF MANAGEMENT SERVICES
           </h1>
 

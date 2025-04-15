@@ -42,7 +42,12 @@ p {
 ul {
   font-weight: 400;
 }
-
+.facebook:hover {
+  color: #1877F2;
+}
+.instagram:hover {
+  color: #C13584;
+}
 .bg-image {
   background-position: center;
   background-size: cover;
