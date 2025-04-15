@@ -7,7 +7,7 @@ export const Home: React.FC = () => {
   return (
     <>
       <div>
-        <Hero />
+        <Hero key="home-page-video" />
        <div className="offwhite py-5">
        <Mission />
         <Services />

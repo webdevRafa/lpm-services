@@ -1,10 +1,10 @@
 import { AboutUs } from "../components/AboutUs";
-import { Hero } from "../components/Hero";
+import { AboutHero } from "../components/AboutHero";
 import { Footer } from "../components/Footer";
 export const About: React.FC = () => {
   return (
     <>
-      <Hero />
+      <AboutHero key="about-page-video" />
      <div className="offwhite">
      <AboutUs />
      <Footer />

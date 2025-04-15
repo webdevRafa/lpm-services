@@ -1,6 +1,6 @@
 // import { useEffect, useState } from "react";
 // import house from "../assets/pics/color-bg.jpg";
-import videosrc from "../assets/videos/Compilation.mp4";
+import videosrc from "../assets/videos/Aboutpagehero.mp4";
 
 export const Hero: React.FC = () => {
   // const [scale, setScale] = useState(1);
@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
     <>
       <div className="flex items-center justify-center relative h-[600px]">
         <div>
-          <h1 className="text-slate-700   text-5xl md:text-6xl text-center">
+          <h1 className="text-slate-700   text-3xl md:text-5xl text-center">
             LEAKED PROOF MANAGEMENT SERVICES
           </h1>
 
