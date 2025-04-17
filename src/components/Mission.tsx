@@ -14,7 +14,7 @@ export const Mission: React.FC = () => {
         className=" bg-gradient-to-t  py-[20px] max-w-[1800px] mx-auto mb-5 "
       >
        
-        <div className="w-full grid grid-cols-1 md:grid-cols-2  gap-5 px-10">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2  gap-5 px-10 relative z-40">
           {/* CARD 1 */}
           <a className="p-5 rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl" href="https://www.onereal.com/david-martinez-1">
           <div className="w-full rounded-lg overflow-hidden relative group h-[350px] md:h-[450px] hover:shadow-2xl">

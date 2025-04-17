@@ -5,11 +5,15 @@ import { IoMenu } from "react-icons/io5";
 import { FaFacebook } from "react-icons/fa";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 import { PiInstagramLogoFill } from "react-icons/pi";
+import { IoMdClose } from "react-icons/io";
 
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const [mobileMenu, setMobileMenu] = useState(true);
+  const handleToggle = () => {
+    setMobileMenu((prev) => !prev)
+  }
   const handleScroll = () => {
     const offset = window.scrollY;
     setIsScrolled(offset > 500); // change 50 to however many pixels i want
@@ -76,15 +80,42 @@ export const Navbar: React.FC = () => {
           </div>
 
           {/* mobile menu */}
-          <div className="block md:hidden">
-            <IoMenu
+          <div className="block md:hidden shadow-md">
+            {!mobileMenu ? ( <IoMenu
+            onClick={handleToggle}
               className={`size-8 ${
                 isScrolled ? "text-slate-700" : "text-slate-700"
               }`}
-            />
+            />) : (
+              <IoMdClose
+              onClick={handleToggle}
+                className={`size-8 ${
+                  isScrolled ? "text-slate-700" : "text-slate-700"
+                }`}
+              />
+            )}
+           
           </div>
         </nav>
       </div>
+
+
+  {mobileMenu && (
+    <div className="w-full py-4 bg-slate-100 fixed top-20 z-50 flex items-center justify-center border-t-2 border-b-2 box-border border-slate-300">
+
+
+  
+    <nav>
+      <ul className="text-center">
+        <li className="cursor-pointer slideDown opacity-0">HOME</li>
+        <li className="cursor-pointer slideDown opacity-0">ABOUT</li>
+        <li className="cursor-pointer slideDown opacity-0">SERVICES</li>
+        <li className="cursor-pointer slideDown opacity-0">CONTACT</li>
+      </ul>
+    </nav>
+
+    </div>
+  )}
     </>
   );
 };
