@@ -14,7 +14,7 @@ export const AboutHero: React.FC = () => {
     <div className="flex items-center justify-center relative h-[600px]">
       <div>
         <h1 className="text-slate-700 text-3xl md:text-4xl text-center uppercase">
-        Trust Real Estate Solutions for Buyers, Sellers & Investors
+        Real Estate Solutions for Buyers, Sellers & Investors
         </h1>
 
         <p className="text-slate-800 text-center text-sm md:text-lg mt-3 mx-4 uppercase">
