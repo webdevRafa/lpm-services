@@ -10,7 +10,7 @@ import { IoMdClose } from "react-icons/io";
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileMenu, setMobileMenu] = useState(true);
+  const [mobileMenu, setMobileMenu] = useState(false);
   const handleToggle = () => {
     setMobileMenu((prev) => !prev)
   }
