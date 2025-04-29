@@ -60,7 +60,7 @@ export const Navbar: React.FC = () => {
                 !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
               }`}
             >
-              SERVICES
+              FAQS
             </li>
             <Link to="/contact">
             <li
@@ -109,7 +109,7 @@ export const Navbar: React.FC = () => {
       <ul className="text-center">
         <li className="cursor-pointer slideDown opacity-0">HOME</li>
         <li className="cursor-pointer slideDown opacity-0">ABOUT</li>
-        <li className="cursor-pointer slideDown opacity-0">SERVICES</li>
+        <li className="cursor-pointer slideDown opacity-0">FAQS</li>
         <li className="cursor-pointer slideDown opacity-0">CONTACT</li>
       </ul>
     </nav>
