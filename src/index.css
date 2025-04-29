@@ -59,7 +59,9 @@ ul {
 .lower {
   filter: brightness(20%);
 }
-
+.shade {
+  background-color: rgba(0, 0, 0, 0.25);
+}
 .slideDown {
   animation: slideDown .5s ease forwards;
   transform: scale(0);

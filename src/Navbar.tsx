@@ -101,7 +101,7 @@ export const Navbar: React.FC = () => {
 
 
   {mobileMenu && (
-    <div className="w-full py-4 bg-slate-100 fixed top-20 z-50 flex items-center justify-center border-t-2 border-b-2 box-border border-slate-300">
+    <div className="w-full py-4 shade fixed top-20 z-50 flex items-center justify-center border-t-2 border-b-2 box-border ">
 
 
   
