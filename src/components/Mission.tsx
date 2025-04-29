@@ -65,7 +65,7 @@ export const Mission: React.FC = () => {
                  IF YOU'RE NEEDING TO SELL IN ANY CONDITION FAST
                 </h1>
                 <button onClick={() => navigate('/offer')} className="cursor-pointer block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
-                  GET AN OFFER FAST
+                  GET A CASH OFFER FAST
                 </button>
               </div>
             </div>
