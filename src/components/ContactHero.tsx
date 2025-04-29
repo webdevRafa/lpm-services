@@ -20,11 +20,11 @@ export const ContactHero: React.FC = () => {
         <p className="text-slate-800 text-center text-sm md:text-lg mt-3 mx-4 uppercase">
           Turning Property Goals Into Reality — One Transaction At A Time.
         </p>
-        <a href="#mission">
-          <button className="cursor-pointer block mx-auto border-3 text-sm border-slate-700 text-slate-700 transition hover:border-slate-700 hover:text-white font-bold hover:bg-slate-700 duration-400 ease-in-out p-2 mt-5">
-            LEARN MORE
-          </button>
-        </a>
+        <div className="bg-slate-700 text-white text-center text-sm md:text-lg mt-3 py-2 mx-4 uppercase">
+        <p>Call or text 210-560-3869</p>
+        <p>NEWHOMEDAVIDMARTINEZ@GMAIL.COM</p>
+        </div>
+    
       </div>
 
       <video

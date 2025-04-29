@@ -3,10 +3,42 @@ import inside from "../assets/pics/room.jpg";
 import kitchen from "../assets/pics/kitchen.jpg";
 import construction from "../assets/pics/construction.jpg";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 
 export const Mission: React.FC = () => {
   const navigate = useNavigate();
-  
+  const cardRefs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
+  const [visibleCards, setVisibleCards] = useState([false, false, false, false]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = cardRefs.findIndex(ref => ref.current === entry.target);
+            if (index !== -1) {
+              setVisibleCards(prev => {
+                const updated = [...prev];
+                updated[index] = true;
+                return updated;
+              });
+              observer.unobserve(entry.target);
+            }
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    cardRefs.forEach(ref => {
+      if (ref.current) observer.observe(ref.current);
+    });
+    
+    return () => {
+      observer.disconnect();
+    }
+  }, []);
+
   return (
     <>
       <div
@@ -17,7 +49,7 @@ export const Mission: React.FC = () => {
         <div className="w-full grid grid-cols-1 md:grid-cols-2  gap-5 px-10 relative z-40">
           {/* CARD 1 */}
           <a className="p-5 rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl" href="https://www.onereal.com/david-martinez-1">
-          <div className="w-full rounded-lg overflow-hidden relative group h-[350px] md:h-[450px] hover:shadow-2xl">
+          <div ref={cardRefs[0]} className={`w-full rounded-lg overflow-hidden relative group h-[350px] md:h-[450px] hover:shadow-2xl transition duration-700 ${visibleCards[0] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
             <img
               className="shadow-lg h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={image}
@@ -46,7 +78,7 @@ export const Mission: React.FC = () => {
 
           {/*  CARD 2 */}
        <div onClick={() => navigate('/offer')} className="p-5 rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
-       <div className="w-full rounded-lg overflow-hidden h-[350px] md:h-[450px] relative group bg-cyan">
+       <div ref={cardRefs[1]} className={`w-full rounded-lg overflow-hidden h-[350px] md:h-[450px] relative group bg-cyan transition duration-700 ${visibleCards[1] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
             <img
               className="hover:scale-130 object-cover group-hover:scale-130 group-hover:brightness-50 h-full w-full transition duration-1000 ease-in-out"
               src={inside}
@@ -74,7 +106,7 @@ export const Mission: React.FC = () => {
 
           {/* CARD 3 */}
        <div onClick={() => navigate('/investornetwork')} className="p-5 rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
-       <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[350px] md:h-[450px]">
+       <div ref={cardRefs[2]} className={`w-full rounded-lg overflow-hidden shadow-md relative group h-[350px] md:h-[450px] transition duration-700 ${visibleCards[2] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
             <img
               className="h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={kitchen}
@@ -99,7 +131,7 @@ export const Mission: React.FC = () => {
        </div>
           {/* CARD 4 */}
           <div onClick={() => navigate('/offer')} className="p-5 rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
-          <div className="w-full rounded-lg overflow-hidden shadow-md relative group h-[350px] md:h-[450px]">
+          <div ref={cardRefs[3]} className={`w-full rounded-lg overflow-hidden shadow-md relative group h-[350px] md:h-[450px] transition duration-700 ${visibleCards[3] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
             <img
               className="h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={construction}
