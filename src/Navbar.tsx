@@ -107,10 +107,10 @@ export const Navbar: React.FC = () => {
   
     <nav>
       <ul className="text-center">
-        <li className="cursor-pointer slideDown opacity-0">HOME</li>
-        <li className="cursor-pointer slideDown opacity-0">ABOUT</li>
-        <li className="cursor-pointer slideDown opacity-0">FAQS</li>
-        <li className="cursor-pointer slideDown opacity-0">CONTACT</li>
+       <Link to="/"> <li className="cursor-pointer slideDown opacity-0 my-2">HOME</li></Link>
+        <Link to="/about"><li className="cursor-pointer slideDown opacity-0 my-2">ABOUT</li></Link>
+       <Link to="/services"> <li className="cursor-pointer slideDown opacity-0 my-2">FAQS</li></Link>
+       <Link to="/contact"> <li className="cursor-pointer slideDown opacity-0 my-2">CONTACT</li></Link>
       </ul>
     </nav>
 
