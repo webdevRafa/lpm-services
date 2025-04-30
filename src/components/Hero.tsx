@@ -21,11 +21,11 @@ export const Hero: React.FC = () => {
     <>
       <div className="flex items-center justify-center relative h-[600px]">
         <div>
-          <h1 className="text-slate-700   text-3xl md:text-5xl text-center">
+          <h1 className="text-spurs-charcoal   text-3xl md:text-5xl text-center">
             LEAKED PROOF MANAGEMENT SERVICES
           </h1>
 
-          <p className="text-slate-800 text-center text-sm md:text-lg mt-3 mx-4">
+          <p className="text-spurs-charcoal text-center text-sm md:text-lg mt-3 mx-4">
             Real Estate, Simplified – We Help You Buy, Sell & Invest With
             Confidence.
           </p>

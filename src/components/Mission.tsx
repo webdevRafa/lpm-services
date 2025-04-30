@@ -46,27 +46,27 @@ export const Mission: React.FC = () => {
         className=" bg-gradient-to-t  py-[20px] max-w-[1800px] mx-auto mb-5 "
       >
        
-        <div className="w-full grid grid-cols-1 md:grid-cols-2  gap-5 px-10 relative z-40">
+        <div className="w-full service-grid gap-5 px-10 relative z-40">
           {/* CARD 1 */}
-          <a className="p-5 rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl" href="https://www.onereal.com/david-martinez-1">
+          <a className="p-0  rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl" href="https://www.onereal.com/david-martinez-1">
           <div ref={cardRefs[0]} className={`w-full rounded-lg overflow-hidden relative group h-[350px] md:h-[450px] hover:shadow-2xl transition duration-700 ${visibleCards[0] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
             <img
-              className="shadow-lg h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
+              className="opacity-60 shadow-lg h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={image}
               alt=""
             />
             {/* HEADLINE DIV */}
-            <div className="z-40 pointer-events-none absolute top-0 left-0 w-full  bg-slate-700 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
-              <h1 className="text-white text-sm">LIST YOUR HOME</h1>
+            <div className="z-70 pointer-events-none absolute top-0 left-0 w-full  flex items-center justify-start group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+              <h1 className="text-spurs-teal text-center font-bold text-sm bg-spurs-charcoal p-5 w-[200px]"><span className="animate-pulse">LIST YOUR HOME</span></h1>
             </div>
             {/* SLIDER DIV */}
-            <div className="z-50 absolute bottom-0 left-0 w-full h-[130px] group bg-slate-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="z-50 absolute bottom-0 left-0 w-full h-[130px] group bg-spurs-charcoal translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
-                <h1 className="text-sm text-white mb-2 text-center">
+                <p className="text-sm text-white font-light mb-2 text-center">
                   INTERESTED IN LISTING YOUR HOME ON THE MARKET?
-                </h1>
+                </p>
                 <a href="https://www.onereal.com/david-martinez-1">
-                  <button className="cursor-pointer block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
+                  <button className="cursor-pointer block mx-auto bg-spurs-teal py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
                     GET STARTED
                   </button>
                 </a>
@@ -77,26 +77,26 @@ export const Mission: React.FC = () => {
          
 
           {/*  CARD 2 */}
-       <div onClick={() => navigate('/offer')} className="p-5 rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
-       <div ref={cardRefs[1]} className={`w-full rounded-lg overflow-hidden h-[350px] md:h-[450px] relative group bg-cyan transition duration-700 ${visibleCards[1] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
+       <div onClick={() => navigate('/offer')} className="rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
+       <div ref={cardRefs[1]} className={`w-full rounded-lg overflow-hidden h-[350px] md:h-[450px] relative group bg-cyan transition duration-700 md:delay-200 ${visibleCards[1] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
             <img
-              className="hover:scale-130 object-cover group-hover:scale-130 group-hover:brightness-50 h-full w-full transition duration-1000 ease-in-out"
+              className="opacity-70 hover:scale-130 object-cover group-hover:scale-130 group-hover:brightness-50 h-full w-full transition duration-1000 ease-in-out"
               src={inside}
               alt=""
             />
 
             {/* HEADLINE DIV */}
-            <div className="pointer-events-none absolute top-0 left-0 w-full  bg-slate-700 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
-              <h1 className="text-sm text-white">NEED TO SELL FAST?</h1>
+            <div className="pointer-events-none absolute top-0 left-0 w-full flex items-center justify-start  group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <h1 className="text-spurs-orange text-center font-bold text-sm bg-spurs-charcoal p-5 w-[200px]"><span className="animate-pulse">SELL FAST</span></h1>
             </div>
 
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-700 px-2 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-spurs-charcoal px-2 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
-                <h1 className="text-sm text-white text-center mb-2">
+                <p className="text-sm  text-white text-center mb-2">
                  IF YOU'RE NEEDING TO SELL IN ANY CONDITION FAST
-                </h1>
-                <button onClick={() => navigate('/offer')} className="cursor-pointer block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
+                </p>
+                <button onClick={() => navigate('/offer')} className="cursor-pointer block mx-auto bg-spurs-orange py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
                   GET A CASH OFFER FAST
                 </button>
               </div>
@@ -105,24 +105,24 @@ export const Mission: React.FC = () => {
        </div>
 
           {/* CARD 3 */}
-       <div onClick={() => navigate('/investornetwork')} className="p-5 rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
-       <div ref={cardRefs[2]} className={`w-full rounded-lg overflow-hidden shadow-md relative group h-[350px] md:h-[450px] transition duration-700 ${visibleCards[2] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
+       <div onClick={() => navigate('/investornetwork')} className="rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
+       <div ref={cardRefs[2]} className={`w-full rounded-lg overflow-hidden shadow-md relative group h-[350px] md:h-[450px] transition duration-700 md:delay-400 ${visibleCards[2] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
             <img
-              className="h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
+              className="opacity-70 h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={kitchen}
               alt=""
             />
             {/* HEADLINE DIV */}
-            <div className="pointer-events-none absolute top-0 left-0 w-full  bg-slate-700 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
-              <h1 className="text-sm text-white">LOOKING TO BUY OFF MARKET DEALS?</h1>
+            <div className="pointer-events-none absolute top-0  left-0 w-full  flex items-center justify-start  group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <h1 className="text-spurs-pink text-center font-bold text-sm bg-spurs-charcoal p-5 w-[200px]"><span className="animate-pulse">OFF MARKET DEALS</span></h1>
             </div>
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-spurs-charcoal translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
-                <h1 className="text-sm text-white text-center mb-2">
-                  SIGN UP HERE
-                </h1>
-                <button onClick={() => navigate('/investornetwork')} className="cursor-pointer block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
+                <p className="text-sm  text-white text-center mb-2">
+                  SIGN UP FOR ALERTS ON OFF MARKET DEALS
+                </p>
+                <button onClick={() => navigate('/investornetwork')} className="cursor-pointer block mx-auto bg-spurs-pink py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
                   GET STARTED
                 </button>
               </div>
@@ -130,25 +130,25 @@ export const Mission: React.FC = () => {
           </div>
        </div>
           {/* CARD 4 */}
-          <div onClick={() => navigate('/offer')} className="p-5 rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
-          <div ref={cardRefs[3]} className={`w-full rounded-lg overflow-hidden shadow-md relative group h-[350px] md:h-[450px] transition duration-700 ${visibleCards[3] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
+          <div onClick={() => navigate('/offer')} className="ounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
+          <div ref={cardRefs[3]} className={`w-full rounded-lg overflow-hidden shadow-md relative group h-[350px] md:h-[450px] transition duration-700 md:delay-600 ${visibleCards[3] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
             <img
-              className="h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
+              className="opacity-70 h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={construction}
               alt=""
             />
             {/* HEADLINE DIV */}
-            <div className="pointer-events-none absolute top-0 left-0 w-full  bg-slate-700 flex items-center justify-center py-5 group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
-              <h1 className="text-sm text-white">WANT TO BUY A BRAND NEW HOME?</h1>
+            <div className="pointer-events-none absolute top-0 left-0 w-full  flex items-center justify-start group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <h1 className="text-spurs-silver-light text-center font-bold text-sm bg-spurs-charcoal p-5 w-[200px]"><span className="animate-pulse">NEW HOMES</span></h1>
             </div>
             {/* SLIDER DIV */}
-            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-slate-700 translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
+            <div className="absolute bottom-0 left-0 w-full h-[130px] group bg-spurs-charcoal translate-y-[100%] group-hover:translate-y-0 transition duration-600 ease-in-out flex items-center justify-center">
               <div>
-                <h1 className="text-sm text-white text-center mb-2">
+                <p className="text-sm text-white text-center mb-2">
                   START YOUR BRAND NEW HOME JOURNEY
-                </h1>
+                </p>
                 <a href="https://www.showingnew.com/davidmartinez210">
-                  <button className="cursor-pointer block mx-auto bg-amber-50 py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
+                  <button className="cursor-pointer block mx-auto bg-spurs-silver-light py-2 px-4 rounded-md shadow-md font-bold hover:scale-105 transition duration-300">
                     GET STARTED
                   </button>
                 </a>

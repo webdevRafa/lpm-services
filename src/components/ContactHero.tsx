@@ -22,7 +22,7 @@ export const ContactHero: React.FC = () => {
         </p>
         <div className="bg-slate-700 text-white text-center text-sm md:text-lg mt-3 py-2 mx-4 uppercase">
         <p>Call or text 210-560-3869</p>
-        <p>NEWHOMEDAVIDMARTINEZ@GMAIL.COM</p>
+        <p className="uppercase">leakedproofmanagementservices@gmail.com</p>
         </div>
     
       </div>
