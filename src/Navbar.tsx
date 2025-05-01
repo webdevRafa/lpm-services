@@ -30,7 +30,7 @@ export const Navbar: React.FC = () => {
     <>
       <div className={`mx-auto w-full fixed top-0 left-0 z-[50] transition-all duration-400 ${
             isScrolled ? "bg-spurs-charcoal shadow-md" : "bg-transparent"
-          } ${mobileMenu && 'tint'}`}>
+          } ${!isScrolled && mobileMenu && 'tint'} ` }>
         <nav
           className={`flex justify-between items-center px-3 mx-5 md:mx-20 py-4 transition duration-500 ease-in-out`}
         >
@@ -91,7 +91,7 @@ export const Navbar: React.FC = () => {
               <IoMdClose
               onClick={handleToggle}
                 className={`size-8 ${
-                  isScrolled ? "text-spurs-charcoal" : "text-spurs-charcoal"
+                  isScrolled ? "text-white delay-500" : "text-spurs-charcoal delay-0"
                 }`}
               />
             )}
@@ -102,7 +102,7 @@ export const Navbar: React.FC = () => {
 
 
   {mobileMenu && (
-    <div className="w-full py-4 tint fixed top-[82px] z-50 flex items-center justify-center ">
+    <div className={`w-full py-4  fixed top-[82px] z-50 flex items-center justify-center ${isScrolled ? 'bg-spurs-charcoal text-white' : 'tint'}`}>
 
 
   
