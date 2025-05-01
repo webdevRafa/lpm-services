@@ -1,44 +1,45 @@
 
-import { TiSocialYoutubeCircular } from "react-icons/ti";
+
 import { AiFillTikTok } from "react-icons/ai";
-import { FaInstagramSquare } from "react-icons/fa";
 import { Parallax } from "react-parallax";
+import { TfiYoutube } from "react-icons/tfi";
+import { AiFillInstagram } from "react-icons/ai";
 
 import bgImg from "../assets/pics/good.webp";
 
 
 const ServicesContent = () => {
   return(
-    <div className="w-full md:py-10 lg:py-20 tint-p">
+    <div className="w-full py-5 md:py-10 lg:py-24 tint-p">
   <div className="flex flex-col md:flex-row gap-20 px-10 w-full  justify-center mx-auto">
     <div className="p-5 shadow-md relative">
     <a href="https://www.instagram.com/david24_7realestate">
-      <FaInstagramSquare className="size-40 mb-5 mx-auto bg-spurs-charcoal text-spurs-orange   p-2 hover:text-red-200" />
+      <AiFillInstagram className="size-30 mb-5 mx-auto text-spurs-orange   p-2 hover:text-red-200 md:hover:scale-110 transition duration-300 ease-out"  />
       </a>
 
-      <h1 className="text-center text-3xl text-spurs-charcoal">INSTAGRAM</h1>
+      <p className="text-center text-3xl text-white">INSTAGRAM</p>
      
      
     </div>
     <div className="p-5 shadow-md">
       <a href="https://www.youtube.com/@LetsTalkRealEstateDavid">
-      <TiSocialYoutubeCircular className="size-40 mb-5 mx-auto bg-spurs-charcoal text-spurs-teal  p-2 hover:text-red-200" />
+      <TfiYoutube className="size-30 mb-5 mx-auto  text-spurs-teal  p-2 hover:text-red-200 md:hover:scale-110 transition duration-300 ease-out" />
       </a>
      
 
-      <h1 className="text-center text-3xl">
+      <p className="text-center text-3xl text-white">
         YOUTUBE
-      </h1>
+      </p>
      
     </div>
     <div className="p-5 shadow-md">
     <a href="https://www.tiktok.com/@david24_7realestate">
-      <AiFillTikTok className="size-40 mb-5 mx-auto bg-spurs-charcoal text-spurs-pink p-2 hover:text-red-200" />
+      <AiFillTikTok className="size-30 mb-5 mx-auto  text-spurs-pink p-2 hover:text-red-200 md:hover:scale-110 transition duration-300 ease-out" />
       </a>
 
-      <h1 className="text-center text-3xl">
+      <p className="text-center text-white text-3xl">
        TIKTOK
-      </h1>
+      </p>
       
     </div>
   </div>
@@ -46,8 +47,6 @@ const ServicesContent = () => {
   )
 }
 export const Services: React.FC = () => {
-
-  
   return (
     <>
       {/* Show Parallax only on md and up */}

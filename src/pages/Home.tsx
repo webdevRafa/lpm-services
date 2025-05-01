@@ -8,7 +8,7 @@ export const Home: React.FC = () => {
     <>
       <div>
         <Hero key="home-page-video" />
-       <div className="bg-spurs-silver py-5">
+       <div className="bg-spurs-silver">
        <Mission />
         <Services />
 

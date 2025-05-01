@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import darkLogo from "./assets/lpm-slate.svg";
+import darkLogo from "./assets/dark-logo.svg";
+import whiteLogo from "./assets/white-logo.svg";
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { FaFacebook } from "react-icons/fa";
@@ -27,20 +28,20 @@ export const Navbar: React.FC = () => {
   }, []);
   return (
     <>
-      <div className={`mx-auto w-full fixed top-0 left-0 z-[50] ${
-            isScrolled ? "bg-white shadow-md" : "bg-transparent"
+      <div className={`mx-auto w-full fixed top-0 left-0 z-[50] transition-all duration-400 ${
+            isScrolled ? "bg-spurs-charcoal shadow-md" : "bg-transparent"
           } ${mobileMenu && 'tint'}`}>
         <nav
           className={`flex justify-between items-center px-3 mx-5 md:mx-20 py-4 transition duration-500 ease-in-out`}
         >
-          <img src={darkLogo} className="max-h-[50px]" alt="" />
-
+          {isScrolled ? ( <img src={whiteLogo} className="max-h-[50px]" alt="" />) : (<img src={darkLogo} className="max-h-[50px]" alt="" />)}
+        
           {/* desktop menu */}
-          <ul className={`relative hidden md:flex gap-2 text-slate-700 `}>
+          <ul className={`relative hidden md:flex gap-2 text-spurs-charcoal `}>
             <Link to="/">
             <li
-              className={`hover:scale-110 transition duration-300 cursor-pointer  p-2 hover:shadow-md  ${
-                !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
+              className={`hover:scale-110 transition duration-300  cursor-pointer p-2 hover:shadow-md  ${
+                isScrolled ? "text-white shadow-none hoverbgteal delay-100" : 'hoverbgcharcoal shadow-md delay-0'
               }`}
             >
               HOME
@@ -48,24 +49,24 @@ export const Navbar: React.FC = () => {
             </Link>
             <Link to="/about">
             <li
-              className={`hover:scale-110 transition duration-300 cursor-pointer p-2 hover:shadow-md ${
-                !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
+              className={`hover:scale-110 transition duration-300  cursor-pointer p-2 hover:shadow-md ${
+                  isScrolled ? "text-white shadow-none hoverbgpink delay-200" : 'hoverbgorange shadow-md delay-0'
               }`}
             >
              ABOUT
             </li>
             </Link>
             <li
-              className={`hover:scale-110 transition duration-300 cursor-pointer  p-2 hover:shadow-md ${
-                !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
+              className={`hover:scale-110 transition duration-300  cursor-pointer  p-2 hover:shadow-md ${
+                  isScrolled ? "text-white shadow-none hoverbgorange delay-300" : 'hoverbgteal shadow-md delay-0'
               }`}
             >
               FAQS
             </li>
             <Link to="/contact">
             <li
-              className={`hover:scale-110 transition duration-300 cursor-pointer p-2 hover:shadow-md ${
-                !isScrolled && "hover:bg-slate-700 hover:text-white shadow-xl"
+              className={`hover:scale-110 transition duration-300  cursor-pointer p-2  ${
+                  isScrolled ? "text-white shadow-none hoverbgteal delay-400" : 'hoverbgpink shadow-md delay-0'
               }`}
             >
             CONTACT
@@ -73,9 +74,9 @@ export const Navbar: React.FC = () => {
             </Link>
           </ul>
           <div className="flex gap-5">
-          <FaFacebook className="cursor-pointer size-8 md:size-10 text-slate-700 facebook transition ease-in-out duration-500"/>
-          <TbBrandYoutubeFilled className="cursor-pointer text-slate-700 size-8 md:size-10 hover:text-red-700 transition ease-in-out duration-500"/>
-          <PiInstagramLogoFill className="cursor-pointer text-slate-700 size-8 md:size-10 instagram transition ease-in-out duration-500"/>
+          <FaFacebook className={`cursor-pointer size-8 md:size-10 facebook transition ease-in-out duration-300  ${isScrolled ? 'text-white delay-100 md:delay-500' : 'text-spurs-charcoal delay-0'}`}/>
+          <TbBrandYoutubeFilled className={`cursor-pointer  size-8 md:size-10 youtube transition ease-in-out  duration-300  ${isScrolled ? 'text-white delay-200 md:delay-600' : 'text-spurs-charcoal delay-0' }`}/>
+          <PiInstagramLogoFill className={`cursor-pointer  size-8 md:size-10 instagram transition ease-in-out duration-300  ${isScrolled ? 'text-white delay-300 md:delay-700' : 'text-spurs-charcoal delay-0'}`}/>
 
           </div>
 
@@ -83,14 +84,14 @@ export const Navbar: React.FC = () => {
           <div className="block md:hidden shadow-md">
             {!mobileMenu ? ( <IoMenu
             onClick={handleToggle}
-              className={`size-8 ${
-                isScrolled ? "text-slate-700" : "text-slate-700"
+              className={`size-8 delay-400 transition duration-300 ${
+                isScrolled ? "text-white" : "text-spurs-charcoal"
               }`}
             />) : (
               <IoMdClose
               onClick={handleToggle}
                 className={`size-8 ${
-                  isScrolled ? "text-slate-700" : "text-slate-700"
+                  isScrolled ? "text-spurs-charcoal" : "text-spurs-charcoal"
                 }`}
               />
             )}

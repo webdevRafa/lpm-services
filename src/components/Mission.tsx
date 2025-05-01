@@ -48,15 +48,15 @@ export const Mission: React.FC = () => {
        
         <div className="w-full service-grid gap-5 px-10 relative z-40">
           {/* CARD 1 */}
-          <a className="p-0  rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl" href="https://www.onereal.com/david-martinez-1">
+          <a className="p-0  rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl lg:translate-y-[-50px]" href="https://www.onereal.com/david-martinez-1">
           <div ref={cardRefs[0]} className={`w-full rounded-lg overflow-hidden relative group h-[350px] md:h-[450px] hover:shadow-2xl transition duration-700 ${visibleCards[0] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
             <img
-              className="opacity-60 shadow-lg h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
+              className="opacity-100 shadow-lg h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={image}
               alt=""
             />
             {/* HEADLINE DIV */}
-            <div className="z-70 pointer-events-none absolute top-0 left-0 w-full  flex items-center justify-start group-hover:translate-y-[-100%] transition duration-600 ease-in-out">
+            <div className="z-70 pointer-events-none absolute top-0 left-0 w-full  flex items-center justify-start group-hover:translate-y-[-100%] transition duration-600 ease-in-out ">
               <h1 className="text-spurs-teal text-center font-bold text-sm bg-spurs-charcoal p-5 w-[200px]"><span className="animate-pulse">LIST YOUR HOME</span></h1>
             </div>
             {/* SLIDER DIV */}
@@ -77,10 +77,10 @@ export const Mission: React.FC = () => {
          
 
           {/*  CARD 2 */}
-       <div onClick={() => navigate('/offer')} className="rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
+       <div onClick={() => navigate('/offer')} className="rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl lg:translate-y-[-50px]">
        <div ref={cardRefs[1]} className={`w-full rounded-lg overflow-hidden h-[350px] md:h-[450px] relative group bg-cyan transition duration-700 md:delay-200 ${visibleCards[1] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
             <img
-              className="opacity-70 hover:scale-130 object-cover group-hover:scale-130 group-hover:brightness-50 h-full w-full transition duration-1000 ease-in-out"
+              className="opacity-100 hover:scale-130 object-cover group-hover:scale-130 group-hover:brightness-50 h-full w-full transition duration-1000 ease-in-out"
               src={inside}
               alt=""
             />
@@ -105,10 +105,10 @@ export const Mission: React.FC = () => {
        </div>
 
           {/* CARD 3 */}
-       <div onClick={() => navigate('/investornetwork')} className="rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
+       <div onClick={() => navigate('/investornetwork')} className="rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl lg:translate-y-[-50px]">
        <div ref={cardRefs[2]} className={`w-full rounded-lg overflow-hidden shadow-md relative group h-[350px] md:h-[450px] transition duration-700 md:delay-400 ${visibleCards[2] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
             <img
-              className="opacity-70 h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
+              className="opacity-100 h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={kitchen}
               alt=""
             />
@@ -130,10 +130,10 @@ export const Mission: React.FC = () => {
           </div>
        </div>
           {/* CARD 4 */}
-          <div onClick={() => navigate('/offer')} className="ounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl">
+          <div onClick={() => navigate('/offer')} className="rounded-lg transition duration-500 ease-in-out hover:bg-white shadow-md hover:shadow-2xl lg:translate-y-[-50px]">
           <div ref={cardRefs[3]} className={`w-full rounded-lg overflow-hidden shadow-md relative group h-[350px] md:h-[450px] transition duration-700 md:delay-600 ${visibleCards[3] ? 'translate-y-0 opacity-100' : 'translate-y-[20px] opacity-0'}`}>
             <img
-              className="opacity-70 h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
+              className="opacity-190 h-full w-full object-cover hover:scale-130 group-hover:scale-130 group-hover:brightness-50 transition duration-1000 ease-in-out"
               src={construction}
               alt=""
             />

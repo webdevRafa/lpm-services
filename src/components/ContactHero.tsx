@@ -13,16 +13,16 @@ export const ContactHero: React.FC = () => {
   return (
     <div className="flex items-center justify-center relative h-[600px]">
       <div>
-        <h1 className="text-slate-700 text-3xl md:text-4xl text-center uppercase">
+        <h1 className="text-spurs-charcoal text-3xl md:text-4xl text-center uppercase">
         CONTACT INFORMATION
         </h1>
 
         <p className="text-slate-800 text-center text-sm md:text-lg mt-3 mx-4 uppercase">
           Turning Property Goals Into Reality — One Transaction At A Time.
         </p>
-        <div className="bg-slate-700 text-white text-center text-sm md:text-lg mt-3 py-2 mx-4 uppercase">
+        <div className="bg-spurs-charcoal text-white text-center text-sm md:text-lg  py-2 mx-4 uppercase">
         <p>Call or text 210-560-3869</p>
-        <p className="uppercase">leakedproofmanagementservices@gmail.com</p>
+        <p className="uppercase text-spurs-teal ">leakedproofmanagementservices@gmail.com</p>
         </div>
     
       </div>

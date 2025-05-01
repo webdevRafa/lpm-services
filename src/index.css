@@ -59,11 +59,30 @@ html {
 .border-spurs-orange {
   border: 2px solid #F9423A;
 }
+.border-spurs-charcoal {
+  border: 2px solid #1D252D;
+}
 .text-spurs-orange {
   color: #F9423A;
 }
 .bg-spurs-charcoal {
   background-color: #1D252D;
+}
+.hoverbgcharcoal:hover {
+  background-color: #1D252D;
+  color: white;
+}
+.hoverbgteal:hover {
+  background-color: #00B2A9;
+  color: white;
+}
+.hoverbgorange:hover {
+  background-color: #F9423A;
+  color: white;
+}
+.hoverbgpink:hover {
+  background-color: #EC008C;
+  color: white;
 }
 .text-spurs-charcoal {
   color: #1D252D;
@@ -95,6 +114,9 @@ ul {
 .instagram:hover {
   color: #C13584;
 }
+.youtube:hover {
+  color: #FF0000;
+}
 .bg-image {
   background-position: center;
   background-size: cover;
@@ -113,7 +135,7 @@ ul {
   background-color: rgba(255, 255, 255, 0.93);
 }
 .tint-p {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #1d252de7;
 }
 .slideDown {
   animation: slideDown .5s ease forwards;
