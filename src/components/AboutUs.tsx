@@ -8,7 +8,7 @@ export const AboutUs: React.FC = () => {
 
 
         {/* FLEX CHILD 1 */}
-        <div className="p-5 w-full h-full mx-auto max-w-[1400px] shadow-md bg-white hover:shadow-xl transition duration-300 ease-in-out md:translate-x-[20px] z-60 relative ">
+        <div className="p-5 w-full h-full mx-auto max-w-[1400px] shadow-md bg-white hover:shadow-xl transition duration-300 ease-in-out md:translate-x-[20px] z-40 relative ">
           <h1 className="text-gray-900 text-center text-xl font-bold md:text-2xl mb-10">
             At Leaked Proof Management Services, we are dedicated to guiding you
             through every step of the real estate investing process with clarity
