@@ -84,8 +84,8 @@ export const Navbar: React.FC = () => {
           <div className="block md:hidden shadow-md">
             {!mobileMenu ? ( <IoMenu
             onClick={handleToggle}
-              className={`size-8 delay-400 transition duration-300 ${
-                isScrolled ? "text-white" : "text-spurs-charcoal"
+              className={`size-8 transition duration-300 ${
+                isScrolled ? "text-white delay-400" : "text-spurs-charcoal delay-0"
               }`}
             />) : (
               <IoMdClose
