@@ -1,4 +1,4 @@
-import { Footer } from "../components/Footer";
+
 import { Hero } from "../components/Hero";
 import { Mission } from "../components/Mission";
 import { ViewListings } from "../components/ViewListings";
@@ -15,7 +15,7 @@ export const Home: React.FC = () => {
   
        </div>
        
-        <Footer />
+     
       </div>
     </>
   );

@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { Hero } from "../components/Hero"
-import { Footer } from "../components/Footer"
 import { IgEmbed } from "../components/IgEmbed"
 
 
@@ -89,6 +88,6 @@ export const InvestorNetwork: React.FC = () => {
    </div>
     </div>
   </div>
-    <Footer />
+   
     </>
 }

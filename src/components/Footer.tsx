@@ -4,21 +4,22 @@ import { AiFillTikTok } from "react-icons/ai";
 
 const socials = [
   {
-    content: <TfiYoutube className="size-14"/>
+    content: <TfiYoutube className="size-14 text-gray-600 hover:text-white"/>
   },
   {
-    content: <RiInstagramFill className="size-14" />
+    content: <RiInstagramFill className="size-14 text-gray-600 hover:text-white" />
   },
   {
-    content: <AiFillTikTok className="size-14" />
+    content: <AiFillTikTok className="size-14 text-gray-600 hover:text-white" />
   }
 ];
 
 export const Footer: React.FC = () => {
   return (
     <>
-      <div className="w-full  bg-spurs-charcoal">
-        <div className="w-full flex items-center gap-5 justify-between py-20 px-18 md:px-0 md:max-w-[600px] mx-auto">
+      <div className="w-full bg-spurs-charcoal  md:px-20">
+      <div className="flex justify-betwee max-w-[600px] mx-auto">
+      <div className="flex w-full gap-3   py-20 px-18 md:px-0">
         {socials.map((logo, index) => (
   <div
     key={index}
@@ -29,6 +30,10 @@ export const Footer: React.FC = () => {
 ))}
          
         </div>
+        <div className="flex items-center justify-center w-full">
+          <p className="text-white">Leaked Proof Management Services</p>
+        </div>
+      </div>
       </div>
     </>
   );

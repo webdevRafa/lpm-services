@@ -40,7 +40,7 @@ export const Navbar: React.FC = () => {
           className={`flex justify-between items-center px-3 mx-5 md:mx-20 py-4 transition duration-500 ease-in-out`}
         >
           
-          {isScrolled ? ( <img src={whiteLogo} className="max-h-[50px]" alt="" />) : (<img src={darkLogo} className="max-h-[50px]" alt="" />)}
+          {isScrolled ? ( <img src={whiteLogo} className="max-h-[40px] md:max-h-[50px]" alt="" />) : (<img src={darkLogo} className="max-h-[40px] md:max-h-[50px]" alt="" />)}
         
           {/* desktop menu */}
           <ul className={`relative hidden md:flex gap-2 text-spurs-charcoal `}>
@@ -89,9 +89,9 @@ export const Navbar: React.FC = () => {
             </Link>
           </ul>
           <div className="flex gap-5">
-          <FaFacebook className={`cursor-pointer size-8 md:size-10 facebook transition ease-in-out duration-300  ${isScrolled ? 'text-white delay-100 md:delay-500' : 'text-spurs-charcoal delay-0'}`}/>
-          <TbBrandYoutubeFilled className={`cursor-pointer  size-8 md:size-10 youtube transition ease-in-out  duration-300  ${isScrolled ? 'text-white delay-200 md:delay-600' : 'text-spurs-charcoal delay-0' }`}/>
-          <PiInstagramLogoFill className={`cursor-pointer  size-8 md:size-10 instagram transition ease-in-out duration-300  ${isScrolled ? 'text-white delay-300 md:delay-700' : 'text-spurs-charcoal delay-0'}`}/>
+          <FaFacebook className={`cursor-pointer size-8 md:size-10 facebook transition ease-in-out duration-300  ${isScrolled ? 'text-facebook delay-100 md:delay-500' : 'text-spurs-charcoal delay-0'}`}/>
+          <TbBrandYoutubeFilled className={`cursor-pointer  size-8 md:size-10 youtube transition ease-in-out  duration-300  ${isScrolled ? 'text-youtube delay-200 md:delay-600' : 'text-spurs-charcoal delay-0' }`}/>
+          <PiInstagramLogoFill className={`cursor-pointer  size-8 md:size-10 instagram transition ease-in-out duration-300  ${isScrolled ? 'text-instagram delay-300 md:delay-700' : 'text-spurs-charcoal delay-0'}`}/>
 
           </div>
 
@@ -117,7 +117,7 @@ export const Navbar: React.FC = () => {
 
 
   {mobileMenu && (
-    <div className={`w-full py-4  fixed top-[82px] z-50 flex items-center justify-center ${isScrolled ? 'bg-spurs-charcoal text-white' : 'bg-white'}`}>
+    <div className={`w-full py-4  fixed top-[72px] z-50 flex items-center justify-center ${isScrolled ? 'bg-spurs-charcoal text-white' : 'bg-white'}`}>
 
 
   

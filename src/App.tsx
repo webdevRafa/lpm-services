@@ -8,6 +8,7 @@ import { InvestorNetwork } from "./pages/InvestorNetwork";
 import { Contact } from "./pages/Contact";
 import { ViewListingsPage } from "./pages/ViewListingsPage";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/viewlistingspage" element={<ViewListingsPage />} />
       </Routes>
+      <Footer />
     </>
   );
 }

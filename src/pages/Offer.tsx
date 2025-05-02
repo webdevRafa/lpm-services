@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { Hero } from "../components/Hero"
-import { Footer } from "../components/Footer"
 import { IgEmbed } from "../components/IgEmbed"
 
 
@@ -68,6 +67,6 @@ export const Offer: React.FC = () => {
         </form>
    </div>
     </div>
-    <Footer />
+  
     </>
 }
