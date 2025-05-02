@@ -44,7 +44,7 @@ export const ListingDetailPage: React.FC = () => {
     onClick={() => setSelectedImage(null)}
   >
 
-    <img src={selectedImage} alt="Full View" className="max-w-[90%] max-h-[90%]" />
+    <img src={selectedImage} alt="Full View" className="max-w-[100%] max-h-[100%]" />
   </div>
 )}
     </div>
