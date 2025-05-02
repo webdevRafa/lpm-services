@@ -78,7 +78,7 @@ export const Navbar: React.FC = () => {
             CONTACT
             </li>
             </Link>
-            <Link to="/viewlistingspage">
+            <Link to="/listings">
             <li
               className={`hover:scale-110 transition duration-300  cursor-pointer p-2  ${
                   isScrolled ? "text-white shadow-none hoverbgteal delay-500" : 'hoverbgpink shadow-md delay-0'

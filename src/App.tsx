@@ -9,6 +9,7 @@ import { Contact } from "./pages/Contact";
 import { ViewListingsPage } from "./pages/ViewListingsPage";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Footer } from "./components/Footer";
+import { ListingDetailPage } from "./pages/ListingDetailPage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/investornetwork" element={<InvestorNetwork />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/listings" element={<ViewListingsPage />} />
+        <Route path="/listings/:slug" element={<ListingDetailPage />} />
       </Routes>
       <Footer />
     </>
