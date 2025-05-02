@@ -25,6 +25,24 @@ html {
   font-weight: 400;
   font-style: italic;
 }
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 10px;
+}
+.item {
+  overflow: hidden;
+}
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item-main {
+  grid-column: span 2;
+  grid-row: span 2;
+}
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

@@ -1,18 +1,20 @@
 import { Footer } from "../components/Footer";
 import { Hero } from "../components/Hero";
 import { Mission } from "../components/Mission";
-import { Services } from "../components/Services";
+import { ViewListings } from "../components/ViewListings";
 
 export const Home: React.FC = () => {
   return (
     <>
       <div>
         <Hero key="home-page-video" />
-       <div className="bg-spurs-silver">
+       <div className="bg-spurs-silver pb-20">
+       
        <Mission />
-        <Services />
-
+       <ViewListings />
+  
        </div>
+       
         <Footer />
       </div>
     </>
