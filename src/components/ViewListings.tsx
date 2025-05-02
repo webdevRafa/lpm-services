@@ -39,7 +39,7 @@ export const ViewListings: React.FC = () => {
          <h2 className={`uppercase text-white text-lg md:text-3xl text-spurs-silver transition  duration-700 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[-50px]'}`}>Check out our listings</h2>
          </div>
          <Link
-         to="/viewlistingspage"
+         to="/listings"
          >
            <button className={`py-2  text-white mx-auto block cursor-pointer w-[200px] border-2 border-white hover:border-teal-500  transition duration-1000  delay-100 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[50px]'}`}>VIEW</button>
          </Link>

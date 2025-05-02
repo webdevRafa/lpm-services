@@ -127,7 +127,7 @@ export const Navbar: React.FC = () => {
         <Link to="/about"><li className="cursor-pointer slideDown opacity-0 my-2">ABOUT</li></Link>
        <Link to="/services"> <li className="cursor-pointer slideDown opacity-0 my-2">FAQS</li></Link>
        <Link to="/contact"> <li className="cursor-pointer slideDown opacity-0 my-2">CONTACT</li></Link>
-       <Link to="/viewlistingspage"> <li className="cursor-pointer slideDown opacity-0 my-2">LISTINGS</li></Link>
+       <Link to="/listings"> <li className="cursor-pointer slideDown opacity-0 my-2">LISTINGS</li></Link>
       </ul>
     </nav>
 
