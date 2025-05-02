@@ -17,9 +17,9 @@ const socials = [
 export const Footer: React.FC = () => {
   return (
     <>
-      <div className="w-full bg-spurs-charcoal  md:px-20">
-      <div className="flex justify-betwee max-w-[600px] mx-auto">
-      <div className="flex w-full gap-3   py-20 px-18 md:px-0">
+      <div className="w-full bg-spurs-charcoal  px-0 md:px-20">
+      <div className="flex justify-between max-w-[600px] mx-auto">
+      <div className="flex w-full gap-3   py-20 md:px-0">
         {socials.map((logo, index) => (
   <div
     key={index}
