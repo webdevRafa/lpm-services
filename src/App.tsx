@@ -24,7 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/viewlistingspage" element={<ViewListingsPage />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
