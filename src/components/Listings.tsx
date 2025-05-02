@@ -220,6 +220,7 @@ const listings = [
 
 
 export const Listings: React.FC = () => {
+    
     const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
 const [visibleStates, setVisibleStates] = useState<boolean[]>([]);
    useEffect(() => {
@@ -267,7 +268,7 @@ const [visibleStates, setVisibleStates] = useState<boolean[]>([]);
       ref={(el) => {
         imageRefs.current[globalIndex] = el;
       }}
-      className={`transition duration-500 ease-out transform delay-${i + 200} ${
+      className={`transition duration-500 ease-out transform delay-${i + 100} ${
         visibleStates[globalIndex] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       } ${i === 0 ? 'item item-main shadow-md' : 'item shadow-md'}`}
     >

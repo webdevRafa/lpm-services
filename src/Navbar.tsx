@@ -7,6 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { IoMdClose } from "react-icons/io";
+import { useLocation } from "react-router-dom";
 
 
 export const Navbar: React.FC = () => {
@@ -19,7 +20,11 @@ export const Navbar: React.FC = () => {
     const offset = window.scrollY;
     setIsScrolled(offset > 500); // change 50 to however many pixels i want
   };
+  const location = useLocation();
 
+  useEffect(() => {
+    setMobileMenu(false); // close mobile menu whenever route changes
+  }, [location.pathname]);
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -34,6 +39,7 @@ export const Navbar: React.FC = () => {
         <nav
           className={`flex justify-between items-center px-3 mx-5 md:mx-20 py-4 transition duration-500 ease-in-out`}
         >
+          
           {isScrolled ? ( <img src={whiteLogo} className="max-h-[50px]" alt="" />) : (<img src={darkLogo} className="max-h-[50px]" alt="" />)}
         
           {/* desktop menu */}
@@ -72,6 +78,15 @@ export const Navbar: React.FC = () => {
             CONTACT
             </li>
             </Link>
+            <Link to="/viewlistingspage">
+            <li
+              className={`hover:scale-110 transition duration-300  cursor-pointer p-2  ${
+                  isScrolled ? "text-white shadow-none hoverbgteal delay-500" : 'hoverbgpink shadow-md delay-0'
+              }`}
+            >
+            LISTINGS
+            </li>
+            </Link>
           </ul>
           <div className="flex gap-5">
           <FaFacebook className={`cursor-pointer size-8 md:size-10 facebook transition ease-in-out duration-300  ${isScrolled ? 'text-white delay-100 md:delay-500' : 'text-spurs-charcoal delay-0'}`}/>
@@ -102,7 +117,7 @@ export const Navbar: React.FC = () => {
 
 
   {mobileMenu && (
-    <div className={`w-full py-4  fixed top-[82px] z-50 flex items-center justify-center ${isScrolled ? 'bg-spurs-charcoal text-white' : 'tint'}`}>
+    <div className={`w-full py-4  fixed top-[82px] z-50 flex items-center justify-center ${isScrolled ? 'bg-spurs-charcoal text-white' : 'bg-white'}`}>
 
 
   
@@ -112,6 +127,7 @@ export const Navbar: React.FC = () => {
         <Link to="/about"><li className="cursor-pointer slideDown opacity-0 my-2">ABOUT</li></Link>
        <Link to="/services"> <li className="cursor-pointer slideDown opacity-0 my-2">FAQS</li></Link>
        <Link to="/contact"> <li className="cursor-pointer slideDown opacity-0 my-2">CONTACT</li></Link>
+       <Link to="/viewlistingspage"> <li className="cursor-pointer slideDown opacity-0 my-2">LISTINGS</li></Link>
       </ul>
     </nav>
 
