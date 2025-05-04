@@ -18,7 +18,7 @@ export const Navbar: React.FC = () => {
   }
   const handleScroll = () => {
     const offset = window.scrollY;
-    setIsScrolled(offset > 500); // change 50 to however many pixels i want
+    setIsScrolled(offset > 30); // change 50 to however many pixels i want
   };
   const location = useLocation();
 
@@ -33,7 +33,7 @@ export const Navbar: React.FC = () => {
   }, []);
   return (
     <>
-      <div className={`mx-auto w-full fixed top-0 left-0 z-[50] transition-all duration-400 ${
+      <div className={`mx-auto w-full fixed top-0 left-0 z-[50] transition-all  ${
             isScrolled ? "bg-spurs-charcoal shadow-md" : "bg-transparent"
           } ${!isScrolled && mobileMenu && 'tint'} ` }>
         <nav

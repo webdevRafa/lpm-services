@@ -43,9 +43,14 @@ const [visibleStates, setVisibleStates] = useState<boolean[]>([]);
     <div className="w-full px-4 md:px-0 py-20 mt-20 md:mt-40">
         <h1 className="text-center mb-10 uppercase md:text-3xl bg-spurs-charcoal max-w-[300px] py-4 px-4 text-white mx-auto">Active Listings</h1>
       <div className="w-full max-w-[1400px] mx-auto">
+        {/* MAP THROUGH THE LISTINGS AND PASS IN THE LISTING AND INDEX */}
         {listings.map((listing, index) => (
             <>
+
+            {/* ADDRESS FOR LISTINGS */}
             <h1 className="mb-2 text-spurs-charcoal">{listing.address}</h1>
+
+            {/* GRID FOR LISTINGS PREVIEW */}
             <div className="preview-grid h-full  relative z-30 mb-10" key={index}>
           
             {listing.gallery.slice(0, 5).map((image, i) => {

@@ -12,7 +12,7 @@
   "dependencies": {
     "@fontsource/poppins": "^5.1.1",
     "@tailwindcss/container-queries": "^0.1.1",
-    "firebase": "^11.3.1",
+    "firebase": "^11.6.1",
     "framer-motion": "^12.4.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

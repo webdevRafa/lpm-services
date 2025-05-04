@@ -80,11 +80,17 @@ html {
 .border-spurs-charcoal {
   border: 2px solid #1D252D;
 }
+.border-spurs-charcoal-light {
+  border: 5px solid #394047;
+}
 .text-spurs-orange {
   color: #F9423A;
 }
 .bg-spurs-charcoal {
   background-color: #1D252D;
+}
+.bg-spurs-charcoal-light {
+  background-color: #394047;
 }
 .hoverbgcharcoal:hover {
   background-color: #1D252D;
