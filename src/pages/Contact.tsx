@@ -24,7 +24,7 @@ export const Contact: React.FC = () => {
   <div className="w-full bg-spurs-charcoal mx-auto py-20">
     {/* SIGN UP FORM */}
     <h2 className="text-spurs-silver uppercase text-center text-lg md:text-2xl mb-10">Or... reach out here</h2>
-   <div className="py-20 flex items-center justify-center border-spurs-charcoal-light max-w-[800px] mx-auto relative">
+   <div className="py-20 flex items-center justify-center border-spurs-charcoal-light max-w-[800px] mx-auto relative px-3">
    <form className=" w-[400px]" action="submit" onSubmit={async (e) => {
     e.preventDefault();
     try {
