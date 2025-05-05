@@ -30,7 +30,7 @@ export const ViewListings: React.FC = () => {
   return (
     <>
       {/* Show Parallax only on md and up */}
-      <div ref={divRef} className="md:block mb-20 ">
+      <div ref={divRef} className="md:block mb-20 max-w-[1400px] mx-auto ">
         <Parallax className="object-cover" bgImage={bgImg} strength={800}>
         <div className="py-15 px-4 md:px-0 md:py-40 tint-p">
        <div className="block mx-auto max-w-[600px]">
@@ -41,7 +41,7 @@ export const ViewListings: React.FC = () => {
          <Link
          to="/listings"
          >
-           <button className={`py-2  text-white mx-auto block cursor-pointer w-[200px] border-2 border-white hover:border-teal-500  transition duration-1000  delay-100 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[50px]'}`}>VIEW</button>
+           <button className={`py-2  text-white mx-auto block cursor-pointer w-[200px] border-2 border-teal-500  transition duration-1000  delay-100 ease-in-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[50px]'}`}>VIEW</button>
          </Link>
         
          </div>

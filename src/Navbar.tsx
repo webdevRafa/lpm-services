@@ -56,7 +56,7 @@ export const Navbar: React.FC = () => {
             <Link to="/about">
             <li
               className={`hover:scale-110 transition duration-300  cursor-pointer p-2 hover:shadow-md ${
-                  isScrolled ? "text-white shadow-none hoverbgpink delay-200" : 'hoverbgorange shadow-md delay-0'
+                  isScrolled ? "text-white shadow-none hoverbgpink delay-200" : 'hoverbgcharcoal shadow-md delay-0'
               }`}
             >
              ABOUT
@@ -64,7 +64,7 @@ export const Navbar: React.FC = () => {
             </Link>
             <li
               className={`hover:scale-110 transition duration-300  cursor-pointer  p-2 hover:shadow-md ${
-                  isScrolled ? "text-white shadow-none hoverbgorange delay-300" : 'hoverbgteal shadow-md delay-0'
+                  isScrolled ? "text-white shadow-none hoverbgorange delay-300" : 'hoverbgcharcoal shadow-md delay-0'
               }`}
             >
               FAQS
@@ -72,7 +72,7 @@ export const Navbar: React.FC = () => {
             <Link to="/contact">
             <li
               className={`hover:scale-110 transition duration-300  cursor-pointer p-2  ${
-                  isScrolled ? "text-white shadow-none hoverbgteal delay-400" : 'hoverbgpink shadow-md delay-0'
+                  isScrolled ? "text-white shadow-none hoverbgteal delay-400" : 'hoverbgcharcoal shadow-md delay-0'
               }`}
             >
             CONTACT
@@ -81,7 +81,7 @@ export const Navbar: React.FC = () => {
             <Link to="/listings">
             <li
               className={`hover:scale-110 transition duration-300  cursor-pointer p-2  ${
-                  isScrolled ? "text-white shadow-none hoverbgteal delay-500" : 'hoverbgpink shadow-md delay-0'
+                  isScrolled ? "text-white shadow-none hoverbgteal delay-500" : 'hoverbgcharcoal shadow-md delay-0'
               }`}
             >
             LISTINGS

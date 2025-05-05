@@ -12,7 +12,7 @@ export const Home: React.FC = () => {
        
        <Mission />
        <ViewListings />
-  
+       
        </div>
        
      

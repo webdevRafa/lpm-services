@@ -23,8 +23,8 @@ export const Contact: React.FC = () => {
   <ContactHero key={'contact-page-hero'}/>
   <div className="w-full bg-spurs-charcoal mx-auto py-20">
     {/* SIGN UP FORM */}
-    <h2 className="text-spurs-silver uppercase text-center text-lg md:text-2xl mb-10">Or... reach out here</h2>
-   <div className="py-20 flex items-center justify-center border-spurs-charcoal-light max-w-[800px] mx-auto relative px-3">
+    <h2 className="text-spurs-silver uppercase text-center text-lg md:text-3xl mb-10">SEND US A MESSAGE</h2>
+   <div className="py-20 flex items-center justify-center mx-3 md:mx-auto border-spurs-charcoal-light max-w-[800px]  relative px-3">
    <form className=" w-[400px]" action="submit" onSubmit={async (e) => {
     e.preventDefault();
     try {
@@ -86,7 +86,18 @@ export const Contact: React.FC = () => {
       title="Format: 555-123-4567"
       required
       value={phone}
-      onChange={(e) => setPhone(e.target.value)}
+      onChange={(e) => {
+        const rawValue = e.target.value.replace(/\D/g, ''); // Remove all non-digits
+        let formatted = rawValue;
+      
+        if (rawValue.length > 3 && rawValue.length <= 6) {
+          formatted = `${rawValue.slice(0, 3)}-${rawValue.slice(3)}`;
+        } else if (rawValue.length > 6) {
+          formatted = `${rawValue.slice(0, 3)}-${rawValue.slice(3, 6)}-${rawValue.slice(6, 10)}`;
+        }
+      
+        setPhone(formatted);
+      }}
     />
   </div>
 
