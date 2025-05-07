@@ -50,3 +50,37 @@ export const sendContactEmail = functions.firestore
       console.error("❌ Failed to send email:", err);
     }
   });
+
+  // OFFER REQUEST EMAIL FUNCTION
+export const sendOfferEmail = functions.firestore
+.document("offerRequests/{docId}")
+.onCreate(async (snap) => {
+  const data = snap.data();
+
+  const mailOptions = {
+    from: `"Offer Notifications" <your-email@gmail.com>`,
+    to: functions.config().email.receiver,
+    subject: "🔥 New Offer Request Submitted",
+    html: `
+      <h2 style="margin-bottom:16px;">New Offer Request</h2>
+      <p><strong>Full Name:</strong> ${data.fullName}</p>
+      <p><strong>Phone:</strong> <a href="tel:${data.phone}">${data.phone}</a></p>
+      <p><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></p>
+      <p><strong>Address:</strong> ${data.propertyAddress}</p>
+      <p><strong>Beds:</strong> ${data.beds}</p>
+      <p><strong>Baths:</strong> ${data.baths}</p>
+      <p><strong>Square Feet:</strong> ${data.squareFeet}</p>
+      <p><strong>Additional Details:</strong></p>
+      <p>${data.additionalDetails || "N/A"}</p>
+      <br />
+      <p style="font-size: 12px; color: gray;">Submitted at ${new Date().toLocaleString()}</p>
+    `,
+  };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    console.log("✅ Offer email sent!");
+  } catch (error) {
+    console.error("❌ Error sending offer email:", error);
+  }
+});

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useRef, useState, useEffect} from "react";
 import { listings } from "../data/listings";
-
+import listingBanner from "../assets/pics/SVG/listing-banner.svg";
 
 
 
@@ -40,15 +40,18 @@ const [visibleStates, setVisibleStates] = useState<boolean[]>([]);
     };
    }, []);
     return <>
-    <div className="w-full px-4 md:px-0 py-20 mt-20 md:mt-40">
-        <h1 className="text-center mb-10 uppercase md:text-3xl bg-spurs-charcoal max-w-[300px] py-4 px-4 text-white mx-auto">Active Listings</h1>
+    <div className="w-full px-4 md:px-0 py-20 mt-10 ">
+    <div className="w-full max-w-[1400px] mx-auto aspect-[4/1] px-2 mb-10 md:px-0 flex items-center justify-center relative">
+    <h1 className="z-30 text-3xl md:text-8xl text-white">ACTIVE LISTINGS</h1>
+  <img src={listingBanner} className="w-full h-full object-cover opacity-80 blur-[6px] absolute top-0 left-0 z-20" alt="Banner" />
+</div>
       <div className="w-full max-w-[1400px] mx-auto">
         {/* MAP THROUGH THE LISTINGS AND PASS IN THE LISTING AND INDEX */}
         {listings.map((listing, index) => (
             <>
 
             {/* ADDRESS FOR LISTINGS */}
-            <h1 className="mb-2 text-spurs-charcoal">{listing.address}</h1>
+            <p className="mb-2 text-white max-w-[400px] translate-y-[60%] z-40 relative p-2 bg-spurs-charcoal ">{listing.address}</p>
 
             {/* GRID FOR LISTINGS PREVIEW */}
             <div className="preview-grid h-full  relative z-30 mb-10" key={index}>
@@ -72,8 +75,8 @@ const [visibleStates, setVisibleStates] = useState<boolean[]>([]);
 
             {/* SEE ALL PHOTOS BUTTON */}
             <Link to={`/listings/${listing.name.toLowerCase()}`}>
-            <div className="absolute z-40 bottom-3 right-3">
-              <div className="bg-spurs-charcoal py-3 px-2 transition duration-300 ease-out hover:scale-105">
+            <div className="absolute z-40 bottom-6 right-3">
+              <div className="bg-spurs-charcoal border-spurs-orange py-3 px-2 transition duration-300 ease-out hover:scale-105">
                 <button className="cursor-pointer text-white ">see all {listing.gallery.length} photos</button>
               </div>
             </div>
