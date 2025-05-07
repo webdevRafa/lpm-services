@@ -82,7 +82,7 @@ export const Offer: React.FC = () => {
     <>
       
     <div className="w-full h-full relative">
-    <div className="max-w-[1400px] mx-auto w-full mt-40 md:py-[100px]">
+    <div className="max-w-[1400px] mx-auto w-full  md:py-[140px]">
       
       <div className="w-full">
         <h2 className="text-spurs-charcoal text-2xl md:text-5xl text-center mb-2 mt-10">
@@ -109,7 +109,7 @@ onChange={handleChange}
 placeholder="Phone Number"
 pattern="^\d{3}-\d{3}-\d{4}$"
 title="Format: 555-123-4567"
-className="my-3 bg-spurs-silver-light w-full p-2 mb-2 rounded"
+className="my-3 bg-spurs-silver-light text-spurs-charcoal w-full p-2 mb-2 rounded"
 />
 
           <input
@@ -118,7 +118,7 @@ className="my-3 bg-spurs-silver-light w-full p-2 mb-2 rounded"
             value={formData.email}
             onChange={handleChange}
             placeholder="Email"
-            className="my-3 bg-spurs-silver-light w-full p-2 mb-2 rounded"
+            className="my-3 bg-spurs-silver-light text-spurs-charcoal w-full p-2 mb-2 rounded"
           />
           <input
             type="text"
@@ -126,7 +126,7 @@ className="my-3 bg-spurs-silver-light w-full p-2 mb-2 rounded"
             value={formData.propertyAddress}
             onChange={handleChange}
             placeholder="Property Address"
-            className="my-3 bg-spurs-silver-light w-full p-2 mb-2 rounded"
+            className="my-3 bg-spurs-silver-light text-spurs-charcoal w-full p-2 mb-2 rounded"
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-4">
   <div className="flex flex-col">
@@ -138,7 +138,7 @@ className="my-3 bg-spurs-silver-light w-full p-2 mb-2 rounded"
       value={formData.beds}
       onChange={handleChange}
       placeholder="e.g. 3"
-      className="bg-spurs-silver-light w-full p-2 rounded"
+      className="bg-spurs-silver-light text-spurs-charcoal w-full p-2 rounded"
     />
   </div>
   <div className="flex flex-col">
@@ -150,7 +150,7 @@ className="my-3 bg-spurs-silver-light w-full p-2 mb-2 rounded"
       value={formData.baths}
       onChange={handleChange}
       placeholder="e.g. 2"
-      className="bg-spurs-silver-light w-full p-2 rounded"
+      className="bg-spurs-silver-light text-spurs-charcoal w-full p-2 rounded"
     />
   </div>
   <div className="flex flex-col">
@@ -162,7 +162,7 @@ className="my-3 bg-spurs-silver-light w-full p-2 mb-2 rounded"
       value={formData.squareFeet}
       onChange={handleChange}
       placeholder="e.g. 1500"
-      className="bg-spurs-silver-light w-full p-2 rounded"
+      className="bg-spurs-silver-light text-spurs-charcoal w-full p-2 rounded"
     />
   </div>
 </div>
@@ -172,7 +172,7 @@ className="my-3 bg-spurs-silver-light w-full p-2 mb-2 rounded"
             value={formData.additionalDetails}
             onChange={handleChange}
             placeholder="Any additional details (e.g., Needs a new roof)"
-            className="my-3 bg-spurs-silver-light w-full p-2 mb-2 rounded"
+            className="my-3 bg-spurs-silver-light text-spurs-charcoal w-full p-2 mb-2 rounded"
             rows={4}
           />
           <button
